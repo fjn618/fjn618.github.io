@@ -2,36 +2,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
-      <loc>http://example.org/posts/</loc>
-      
-      <lastmod>2019-08-29T00:06:27+08:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://example.org/</loc>
-      
-      <lastmod>2019-08-29T00:06:27+08:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://example.org/posts/%E5%BC%80%E5%90%AF%E5%8C%85%E5%AD%90%E7%9A%84%E5%B0%8F%E4%B8%96%E7%95%8C/</loc>
-      
-      <lastmod>2019-08-29T00:06:27+08:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
       <loc>http://example.org/categories/</loc>
       
       
@@ -41,6 +11,14 @@
   
     <url>
       <loc>http://example.org/tags/</loc>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://example.org/</loc>
       
       
       
