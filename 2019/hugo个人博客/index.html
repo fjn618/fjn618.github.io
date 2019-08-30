@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="fujiaoning">
+  
+  
+  
+  <link rel="prev" href="http://fjn618.xyz/2019/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/" />
+  
+  <link rel="canonical" href="http://fjn618.xyz/2019/hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           如何用 hugo 搭建个人博客 | 包子的小世界
+       
+  </title>
+  <meta name="title" content="如何用 hugo 搭建个人博客 | 包子的小世界">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "http:\/\/fjn618.xyz\/"
+    },
+    "articleSection" : "posts",
+    "name" : "如何用 hugo 搭建个人博客",
+    "headline" : "如何用 hugo 搭建个人博客",
+    "description" : "Hugo:Go语言实现的博客生成器  第一步:下载hugo\n 安装hugo\nMac安装方式\nbrew install hugo\nhugo version\nWindows安装方式\n下载hugo_版本号_系统.zip 下载地址\n以我的版本为例 解压后得到hugo.exe文件\n 把hugo.exe所在的文件夹路径添加到path\n右键此电脑,进入属性,点击高级系统设置,选择环境变量,双击path,点击新建,将hugo.exe的路径粘贴后点击确定  重启终端,输入 hugo version 查看版本号\n  第二步:搭建框架\n 创建一个目录并进入它  进入hugo官网后点击quick start\n 从step2开始复制代码到终端\nstep2:hugo new site quickstart\n创建一个名为quickstart的仓库,建议将名字更改为你的用户名.github.io-creator\nstep3:\ncd quickstart\ngit init\ngit submodule add https:\/\/github.com\/budparr\/gohugo-theme-ananke.git themes\/ananke\necho \x27theme = \x26quot;ananke\x26quot;\x27 \x26gt;\x26gt; config.toml\n本地仓库初始化,并使用ananke主题进行美化 更多主题\nstep4:hugo new posts\/my-first-post.md\n添加了名为my-first-post的一篇内容\nstep5:hugo server -D启动hugo\nstep6:打开config.toml编辑以下内容\nbaseURL = \x26quot;https:\/\/你的域名\/\x26quot; languageCode = \x26quot;zh-ch\x26quot; title = \x26quot;你的网站名\x26quot; theme = \x26quot;ananke\x26quot;  step7:hugo构建静态页面",
+    "inLanguage" : "zh-Hans",
+    "author" : "fujiaoning",
+    "creator" : "fujiaoning",
+    "publisher": "fujiaoning",
+    "accountablePerson" : "fujiaoning",
+    "copyrightHolder" : "fujiaoning",
+    "copyrightYear" : "2019",
+    "datePublished": "2019-08-29 17:18:26 \x2b0800 CST",
+    "dateModified" : "2019-08-29 17:18:26 \x2b0800 CST",
+    "url" : "http:\/\/fjn618.xyz\/2019\/hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2\/",
+    "wordCount" : "69",
+    "keywords" : [  "包子的小世界"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="http://fjn618.xyz/">包子的小世界</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="http://fjn618.xyz/">包子的小世界</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">如何用 hugo 搭建个人博客</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="http://fjn618.xyz/" rel="author">fujiaoning</a> with ♥ 
+                <span class="post-time">
+                on <time datetime=2019-08-29 itemprop="datePublished">August 29, 2019</time>
+                </span>
+                in
+                
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          
+
+<h3 id="hugo-go语言实现的博客生成器">Hugo:Go语言实现的博客生成器</h3>
+
+<ul>
+<li><p>第一步:下载hugo</p>
+
+<ol>
+<li><p>安装hugo<br />
+Mac安装方式<br />
+<code>brew install hugo</code><br />
+<code>hugo version</code><br />
+Windows安装方式<br />
+下载hugo_版本号_系统.zip
+<a href="https://github.com/gohugoio/hugo/releases" rel="nofollow noreferrer" target="_blank">下载地址</a><br />
+以我的版本为例<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/images/3.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></p></li>
+
+<li><p>解压后得到hugo.exe文件</p></li>
+
+<li><p>把hugo.exe所在的文件夹路径添加到path<br />
+右键此电脑,进入属性,点击高级系统设置,选择环境变量,双击path,点击新建,将hugo.exe的路径粘贴后点击确定
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/images/a.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure>
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/images/b.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></p></li>
+
+<li><p>重启终端,输入 hugo version 查看版本号<br />
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/images/c.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></p></li>
+</ol></li>
+
+<li><p>第二步:搭建框架</p>
+
+<ol>
+<li><p>创建一个目录并进入它
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/images/d.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></p></li>
+
+<li><p>进入<a href="https://gohugo.io/" rel="nofollow noreferrer" target="_blank">hugo官网</a>后点击quick start<br />
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/images/e.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></p></li>
+
+<li><p>从step2开始复制代码到终端<br />
+step2:<code>hugo new site quickstart</code><br />
+创建一个名为quickstart的仓库,建议将名字更改为<code>你的用户名.github.io-creator</code><br />
+step3:<br />
+     <code>cd quickstart</code><br />
+     <code>git init</code><br />
+     <code>git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke</code><br />
+     <code>echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml</code><br />
+本地仓库初始化,并使用ananke主题进行美化 <a href="https://themes.gohugo.io/" rel="nofollow noreferrer" target="_blank">更多主题</a><br />
+step4:<code>hugo new posts/my-first-post.md</code><br />
+添加了名为my-first-post的一篇内容<br />
+step5:<code>hugo server -D</code>启动hugo<br />
+step6:打开<code>config.toml</code>编辑以下内容</p>
+
+<pre><code>baseURL = &quot;https://你的域名/&quot;
+languageCode = &quot;zh-ch&quot;
+title = &quot;你的网站名&quot;
+theme = &quot;ananke&quot;
+</code></pre>
+
+<p>step7:<code>hugo</code>构建静态页面</p></li>
+</ol></li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>fujiaoning </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=http://fjn618.xyz/2019/hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/>http://fjn618.xyz/2019/hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</span>
+            </p>
+            
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="http://fjn618.xyz/">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="http://fjn618.xyz/2019/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/" class="prev" rel="prev" title="HTML入门笔记1"><i class="iconfont icon-left"></i>&nbsp;HTML入门笔记1</a>
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2019 - 2019</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="http://fjn618.xyz/">fujiaoning</a> | </span> 
+         
+
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+     </div>
+  </body>
+</html>

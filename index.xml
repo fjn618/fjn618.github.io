@@ -10,10 +10,10 @@
     
     <item>
       <title>如何用 hugo 搭建个人博客</title>
-      <link>http://fjn618.xyz/2019/%E5%BC%80%E5%90%AF%E5%8C%85%E5%AD%90%E7%9A%84%E5%B0%8F%E4%B8%96%E7%95%8C/</link>
+      <link>http://fjn618.xyz/2019/hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Thu, 29 Aug 2019 17:18:26 +0800</pubDate>
       
-      <guid>http://fjn618.xyz/2019/%E5%BC%80%E5%90%AF%E5%8C%85%E5%AD%90%E7%9A%84%E5%B0%8F%E4%B8%96%E7%95%8C/</guid>
+      <guid>http://fjn618.xyz/2019/hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
       <description>
 
 &lt;h3 id=&#34;hugo-go语言实现的博客生成器&#34;&gt;Hugo:Go语言实现的博客生成器&lt;/h3&gt;
@@ -74,6 +74,85 @@ theme = &amp;quot;ananke&amp;quot;
 &lt;p&gt;step7:&lt;code&gt;hugo&lt;/code&gt;构建静态页面&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>HTML入门笔记1</title>
+      <link>http://fjn618.xyz/2019/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
+      <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>
+      
+      <guid>http://fjn618.xyz/2019/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
+      <description>
+
+&lt;h3 id=&#34;www-world-wide-web&#34;&gt;WWW:World Wide Web&lt;/h3&gt;
+
+&lt;p&gt;万维网WWW=URL+HTTP+HTML&lt;/p&gt;
+
+&lt;h3 id=&#34;html之父&#34;&gt;HTML之父&lt;/h3&gt;
+
+&lt;p&gt;Tim Berners-Lee,1990年左右基于互联网发明了万维网,用自己写的浏览器访问了自己的服务器,让每个人输入网址就能看到网页,2004年获得大英帝国爵级司令勋章.2017年被颁发图灵奖.&lt;/p&gt;
+
+&lt;h3 id=&#34;html起手&#34;&gt;HTML起手&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt; # 文档类型
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; # 页面语言 中文通常改成zh-CN
+
+&amp;lt;head&amp;gt;
+    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; # 支持所有语言标准
+    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt; # 防止页面缩放
+    &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;ie=edge&amp;quot;&amp;gt; # 更新至最新页面版本
+    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; # 网页标题
+&amp;lt;/head&amp;gt;
+
+&amp;lt;body&amp;gt;
+
+&amp;lt;/body&amp;gt;
+
+&amp;lt;/html&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;章节标签&#34;&gt;章节标签&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;标题h1~h6&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;章节section&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;文章article&lt;/li&gt;
+&lt;li&gt;段落p&lt;/li&gt;
+&lt;li&gt;头部header&lt;/li&gt;
+&lt;li&gt;主要内容main&lt;/li&gt;
+&lt;li&gt;旁支内容aside&lt;/li&gt;
+&lt;li&gt;划分div&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;全局属性&#34;&gt;全局属性&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;class标签分类&lt;/li&gt;
+&lt;li&gt;contenteditable用户可编辑&lt;/li&gt;
+&lt;li&gt;hidden隐藏&lt;/li&gt;
+&lt;li&gt;id不报错尽量使用class&lt;/li&gt;
+&lt;li&gt;style html的属性,比css高一级,会被js覆盖&lt;/li&gt;
+&lt;li&gt;tabindex可交互属性&lt;/li&gt;
+&lt;li&gt;title提示&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;内容标签&#34;&gt;内容标签&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ol+li有序列表中的一项&lt;/li&gt;
+&lt;li&gt;ul+li无序列表中的一项&lt;/li&gt;
+&lt;li&gt;dl+dt+dd描述列表&lt;/li&gt;
+&lt;li&gt;pre保留空格回车&lt;/li&gt;
+&lt;li&gt;hr分割线&lt;/li&gt;
+&lt;li&gt;br换行&lt;/li&gt;
+&lt;li&gt;a超链接&lt;/li&gt;
+&lt;li&gt;em语气的强调&lt;/li&gt;
+&lt;li&gt;strong内容的强调&lt;/li&gt;
+&lt;li&gt;code内容代码等宽&lt;/li&gt;
+&lt;li&gt;quote引用&lt;/li&gt;
+&lt;li&gt;blockquote换行引用&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     

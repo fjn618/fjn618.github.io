@@ -13,10 +13,10 @@
     
     <item>
       <title>如何用 hugo 搭建个人博客</title>
-      <link>http://fjn618.xyz/2019/%E5%BC%80%E5%90%AF%E5%8C%85%E5%AD%90%E7%9A%84%E5%B0%8F%E4%B8%96%E7%95%8C/</link>
+      <link>http://fjn618.xyz/2019/hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Thu, 29 Aug 2019 17:18:26 +0800</pubDate>
       
-      <guid>http://fjn618.xyz/2019/%E5%BC%80%E5%90%AF%E5%8C%85%E5%AD%90%E7%9A%84%E5%B0%8F%E4%B8%96%E7%95%8C/</guid>
+      <guid>http://fjn618.xyz/2019/hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
       <description>Hugo:Go语言实现的博客生成器  第一步:下载hugo
  安装hugo
 Mac安装方式
@@ -43,6 +43,20 @@ step4:hugo new posts/my-first-post.md
 step5:hugo server -D启动hugo
 step6:打开config.toml编辑以下内容
 baseURL = &amp;quot;https://你的域名/&amp;quot; languageCode = &amp;quot;zh-ch&amp;quot; title = &amp;quot;你的网站名&amp;quot; theme = &amp;quot;ananke&amp;quot;  step7:hugo构建静态页面</description>
+    </item>
+    
+    <item>
+      <title>HTML入门笔记1</title>
+      <link>http://fjn618.xyz/2019/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
+      <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>
+      
+      <guid>http://fjn618.xyz/2019/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
+      <description> WWW:World Wide Web 万维网WWW=URL+HTTP+HTML
+HTML之父 Tim Berners-Lee,1990年左右基于互联网发明了万维网,用自己写的浏览器访问了自己的服务器,让每个人输入网址就能看到网页,2004年获得大英帝国爵级司令勋章.2017年被颁发图灵奖.
+HTML起手 &amp;lt;!DOCTYPE html&amp;gt; # 文档类型 &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; # 页面语言 中文通常改成zh-CN &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; # 支持所有语言标准 &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt; # 防止页面缩放 &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;ie=edge&amp;quot;&amp;gt; # 更新至最新页面版本 &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; # 网页标题 &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  章节标签  标题h1~h6
+ 章节section
+ 文章article 段落p 头部header 主要内容main 旁支内容aside 划分div
+  全局属性  class标签分类 contenteditable用户可编辑 hidden隐藏 id不报错尽量使用class style html的属性,比css高一级,会被js覆盖 tabindex可交互属性 title提示  内容标签  ol+li有序列表中的一项 ul+li无序列表中的一项 dl+dt+dd描述列表 pre保留空格回车 hr分割线 br换行 a超链接 em语气的强调 strong内容的强调 code内容代码等宽 quote引用 blockquote换行引用  </description>
     </item>
     
     <item>
