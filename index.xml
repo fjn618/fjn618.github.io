@@ -9,39 +9,69 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>开启包子的小世界(hugo学习笔记)</title>
+      <title>如何用 hugo 搭建个人博客</title>
       <link>http://fjn618.xyz/2019/%E5%BC%80%E5%90%AF%E5%8C%85%E5%AD%90%E7%9A%84%E5%B0%8F%E4%B8%96%E7%95%8C/</link>
       <pubDate>Thu, 29 Aug 2019 17:18:26 +0800</pubDate>
       
       <guid>http://fjn618.xyz/2019/%E5%BC%80%E5%90%AF%E5%8C%85%E5%AD%90%E7%9A%84%E5%B0%8F%E4%B8%96%E7%95%8C/</guid>
       <description>
 
-&lt;h3 id=&#34;如何用-hugo-搭建个人博客&#34;&gt;如何用 hugo 搭建个人博客&lt;/h3&gt;
+&lt;h3 id=&#34;hugo-go语言实现的博客生成器&#34;&gt;Hugo:Go语言实现的博客生成器&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;第一步&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;第一步:下载hugo&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;安装hugo&lt;br /&gt;
-&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;下载地址&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+Mac安装方式&lt;br /&gt;
+&lt;code&gt;brew install hugo&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;hugo version&lt;/code&gt;&lt;br /&gt;
+Windows安装方式&lt;br /&gt;
+下载hugo_版本号_系统.zip
+&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;下载地址&lt;/a&gt;&lt;br /&gt;
+以我的版本为例&lt;img src=&#34;http://fjn618.xyz/images/3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;解压&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;解压后得到hugo.exe文件&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;把Hugo所在的文件夹路径添加到path&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;把hugo.exe所在的文件夹路径添加到path&lt;br /&gt;
+右键此电脑,进入属性,点击高级系统设置,选择环境变量,双击path,点击新建,将hugo.exe的路径粘贴后点击确定
+&lt;img src=&#34;http://fjn618.xyz/images/a.png&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;http://fjn618.xyz/images/b.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;重启终端,输入 hugo version 查看版本号&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;重启终端,输入 hugo version 查看版本号&lt;br /&gt;
+&lt;img src=&#34;http://fjn618.xyz/images/c.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;第二步&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;第二步:搭建框架&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;进入&lt;a href=&#34;https://gohugo.io/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;hugo官网&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;创建一个目录并进入它
+&lt;img src=&#34;http://fjn618.xyz/images/d.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;点击quick start&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;进入&lt;a href=&#34;https://gohugo.io/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;hugo官网&lt;/a&gt;后点击quick start&lt;br /&gt;
+&lt;img src=&#34;http://fjn618.xyz/images/e.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;从step2开始复制代码到终端&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;从step2开始复制代码到终端&lt;br /&gt;
+step2:&lt;code&gt;hugo new site quickstart&lt;/code&gt;&lt;br /&gt;
+创建一个名为quickstart的仓库,建议将名字更改为&lt;code&gt;你的用户名.github.io-creator&lt;/code&gt;&lt;br /&gt;
+step3:&lt;br /&gt;
+     &lt;code&gt;cd quickstart&lt;/code&gt;&lt;br /&gt;
+     &lt;code&gt;git init&lt;/code&gt;&lt;br /&gt;
+     &lt;code&gt;git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke&lt;/code&gt;&lt;br /&gt;
+     &lt;code&gt;echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml&lt;/code&gt;&lt;br /&gt;
+本地仓库初始化,并使用ananke主题进行美化 &lt;a href=&#34;https://themes.gohugo.io/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;更多主题&lt;/a&gt;&lt;br /&gt;
+step4:&lt;code&gt;hugo new posts/my-first-post.md&lt;/code&gt;&lt;br /&gt;
+添加了名为my-first-post的一篇内容&lt;br /&gt;
+step5:&lt;code&gt;hugo server -D&lt;/code&gt;启动hugo&lt;br /&gt;
+step6:打开&lt;code&gt;config.toml&lt;/code&gt;编辑以下内容&lt;/p&gt;
 
-&lt;li&gt;&lt;p&gt;输入 hugo server 预览网页&lt;/p&gt;&lt;/li&gt;
+&lt;pre&gt;&lt;code&gt;baseURL = &amp;quot;https://你的域名/&amp;quot;
+languageCode = &amp;quot;zh-ch&amp;quot;
+title = &amp;quot;你的网站名&amp;quot;
+theme = &amp;quot;ananke&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;step7:&lt;code&gt;hugo&lt;/code&gt;构建静态页面&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>

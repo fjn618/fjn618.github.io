@@ -12,23 +12,37 @@
     
     
     <item>
-      <title>开启包子的小世界(hugo学习笔记)</title>
+      <title>如何用 hugo 搭建个人博客</title>
       <link>http://fjn618.xyz/2019/%E5%BC%80%E5%90%AF%E5%8C%85%E5%AD%90%E7%9A%84%E5%B0%8F%E4%B8%96%E7%95%8C/</link>
       <pubDate>Thu, 29 Aug 2019 17:18:26 +0800</pubDate>
       
       <guid>http://fjn618.xyz/2019/%E5%BC%80%E5%90%AF%E5%8C%85%E5%AD%90%E7%9A%84%E5%B0%8F%E4%B8%96%E7%95%8C/</guid>
-      <description> 如何用 hugo 搭建个人博客  第一步
+      <description>Hugo:Go语言实现的博客生成器  第一步:下载hugo
  安装hugo
-下载地址
- 解压
- 把Hugo所在的文件夹路径添加到path
- 重启终端,输入 hugo version 查看版本号
-  第二步
- 进入hugo官网
- 点击quick start
+Mac安装方式
+brew install hugo
+hugo version
+Windows安装方式
+下载hugo_版本号_系统.zip 下载地址
+以我的版本为例 解压后得到hugo.exe文件
+ 把hugo.exe所在的文件夹路径添加到path
+右键此电脑,进入属性,点击高级系统设置,选择环境变量,双击path,点击新建,将hugo.exe的路径粘贴后点击确定  重启终端,输入 hugo version 查看版本号
+  第二步:搭建框架
+ 创建一个目录并进入它  进入hugo官网后点击quick start
  从step2开始复制代码到终端
- 输入 hugo server 预览网页
-   </description>
+step2:hugo new site quickstart
+创建一个名为quickstart的仓库,建议将名字更改为你的用户名.github.io-creator
+step3:
+cd quickstart
+git init
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml
+本地仓库初始化,并使用ananke主题进行美化 更多主题
+step4:hugo new posts/my-first-post.md
+添加了名为my-first-post的一篇内容
+step5:hugo server -D启动hugo
+step6:打开config.toml编辑以下内容
+baseURL = &amp;quot;https://你的域名/&amp;quot; languageCode = &amp;quot;zh-ch&amp;quot; title = &amp;quot;你的网站名&amp;quot; theme = &amp;quot;ananke&amp;quot;  step7:hugo构建静态页面</description>
     </item>
     
     <item>
