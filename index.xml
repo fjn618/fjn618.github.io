@@ -259,8 +259,46 @@ max-width:100%&lt;br /&gt;&lt;/li&gt;
 发get或post请求,然后刷新页面&lt;br /&gt;&lt;/li&gt;
 &lt;li&gt;属性&lt;br /&gt;
 action请求后到哪个页面&lt;br /&gt;
-autocomplete&lt;br /&gt;
-method&lt;br /&gt;&lt;/li&gt;
+autocomplete自动填充&lt;br /&gt;
+method控制用get还是post请求&lt;br /&gt;
+target提交到哪个页面,哪个页面要刷新&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;事件&lt;br /&gt;
+input里面不可以有其他标签,button可以&lt;br /&gt;
+onsubmit必须有type=&amp;ldquo;submit&amp;rdquo;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;input标签&#34;&gt;input标签&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;作用&lt;br /&gt;
+让用户输入内容&lt;br /&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;属性&lt;br /&gt;
+类型type&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;button&lt;/li&gt;
+&lt;li&gt;checkbox&lt;/li&gt;
+&lt;li&gt;email&lt;/li&gt;
+&lt;li&gt;file&lt;/li&gt;
+&lt;li&gt;hidden&lt;/li&gt;
+&lt;li&gt;number&lt;/li&gt;
+&lt;li&gt;password&lt;/li&gt;
+&lt;li&gt;radio&lt;/li&gt;
+&lt;li&gt;search&lt;/li&gt;
+&lt;li&gt;submit&lt;/li&gt;
+&lt;li&gt;tel&lt;/li&gt;
+&lt;li&gt;text&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;其他&lt;br /&gt;
+name/autofocus/checked/disabled/maxlength/pattern/value/placehoder&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;事件&lt;br /&gt;
+onchange/onfocus/onblur&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;验证器&lt;br /&gt;
+html新增功能&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
