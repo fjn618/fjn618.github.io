@@ -60,6 +60,45 @@ HTML起手 &amp;lt;!DOCTYPE html&amp;gt; # 文档类型 &amp;lt;html lang=&amp;q
     </item>
     
     <item>
+      <title>HTML常用标签</title>
+      <link>http://fjn618.xyz/2019/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>
+      
+      <guid>http://fjn618.xyz/2019/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <description>a标签用法  属性  href超链接 target指定在哪里打开页面 download理论上下载网页,不过很多情况下不支持 rel=noopener防止bug
+  a的href取值  网址
+https://google.com
+http://google.com
+//google.com无协议网址
+ 路径
+/a/b/c以及a/b/c
+index.html 以及./index.html
+ 伪协议
+javascript:代码;
+mailto:邮箱
+tel:手机号
+ id
+href=#xxx
+  作用
+ 跳转外部页面 跳转内部锚点 跳转到邮箱或电话等
+  a的target取值
+ 内置名字
+_blank在空白页面打开
+_top在顶级区域打开
+_parent在上一级区域打开
+_self在当前区域打开
+ 程序员命名
+window的name
+iframe的name   table标签用法  相关标签
+ thead头部
+ tbody内容
+ tfoot尾部 tr其中的一行 td数据 th表头
+table里只能有三个标签  样式
+ table-layout宽度
+ border-collapse合并边距</description>
+    </item>
+    
+    <item>
       <title>包子的星球</title>
       <link>http://fjn618.xyz/2019/%E5%8C%85%E5%AD%90%E7%9A%84%E6%98%9F%E7%90%83/</link>
       <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>

@@ -157,6 +157,115 @@ theme = &amp;quot;ananke&amp;quot;
     </item>
     
     <item>
+      <title>HTML常用标签</title>
+      <link>http://fjn618.xyz/2019/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>
+      
+      <guid>http://fjn618.xyz/2019/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <description>
+
+&lt;h3 id=&#34;a标签用法&#34;&gt;a标签用法&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;属性
+
+&lt;ol&gt;
+&lt;li&gt;href超链接&lt;/li&gt;
+&lt;li&gt;target指定在哪里打开页面&lt;/li&gt;
+&lt;li&gt;download理论上下载网页,不过很多情况下不支持&lt;/li&gt;
+&lt;li&gt;rel=noopener防止bug&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;a的href取值
+
+&lt;ol&gt;
+&lt;li&gt;网址&lt;br /&gt;
+&lt;a href=&#34;https://google.com&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;https://google.com&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://google.com&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;http://google.com&lt;/a&gt;&lt;br /&gt;
+//google.com无协议网址&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;路径&lt;br /&gt;
+/a/b/c以及a/b/c&lt;br /&gt;
+index.html 以及./index.html&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;伪协议&lt;br /&gt;
+javascript:代码;&lt;br /&gt;
+mailto:邮箱&lt;br /&gt;
+tel:手机号&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;id&lt;br /&gt;
+href=#xxx&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;作用&lt;br /&gt;
+
+&lt;ol&gt;
+&lt;li&gt;跳转外部页面&lt;/li&gt;
+&lt;li&gt;跳转内部锚点&lt;/li&gt;
+&lt;li&gt;跳转到邮箱或电话等&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;a的target取值&lt;br /&gt;
+
+&lt;ol&gt;
+&lt;li&gt;内置名字&lt;br /&gt;
+_blank在空白页面打开&lt;br /&gt;
+_top在顶级区域打开&lt;br /&gt;
+_parent在上一级区域打开&lt;br /&gt;
+_self在当前区域打开&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;程序员命名&lt;br /&gt;
+window的name&lt;br /&gt;
+iframe的name&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;table标签用法&#34;&gt;table标签用法&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;相关标签&lt;br /&gt;
+
+&lt;ol&gt;
+&lt;li&gt;thead头部&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;tbody内容&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;tfoot尾部&lt;/li&gt;
+&lt;li&gt;tr其中的一行&lt;/li&gt;
+&lt;li&gt;td数据&lt;/li&gt;
+&lt;li&gt;th表头&lt;br /&gt;
+table里只能有三个标签&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;样式&lt;br /&gt;
+
+&lt;ol&gt;
+&lt;li&gt;table-layout宽度&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;border-collapse合并边距&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;border-spacing调整空隙&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;img标签&#34;&gt;img标签&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;作用&lt;br /&gt;
+发出get请求,展示一张图片&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;属性&lt;br /&gt;
+alt/图片加载失败时显示描述&lt;br /&gt;
+height/高度,若只写高度,宽度会自适应&lt;br /&gt;
+width/宽度,若只写宽度,高度会自适应&lt;br /&gt;
+src图片地址&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;事件&lt;br /&gt;
+onload/onerror监听图片是否加载成功&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;响应式&lt;br /&gt;
+max-width:100%&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;form标签&#34;&gt;form标签&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;作用&lt;br /&gt;
+发get或post请求,然后刷新页面&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;属性&lt;br /&gt;
+action请求后到哪个页面&lt;br /&gt;
+autocomplete&lt;br /&gt;
+method&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>包子的星球</title>
       <link>http://fjn618.xyz/2019/%E5%8C%85%E5%AD%90%E7%9A%84%E6%98%9F%E7%90%83/</link>
       <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>
