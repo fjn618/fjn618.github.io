@@ -173,7 +173,8 @@ theme = &amp;quot;ananke&amp;quot;
 &lt;li&gt;href超链接&lt;/li&gt;
 &lt;li&gt;target指定在哪里打开页面&lt;/li&gt;
 &lt;li&gt;download理论上下载网页,不过很多情况下不支持&lt;/li&gt;
-&lt;li&gt;rel=noopener防止bug&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;rel=noopener防止bug&lt;br /&gt;
+&lt;img src=&#34;http://fjn618.xyz/images/html1.png&#34; alt=&#34;&#34; /&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;li&gt;a的href取值
 
@@ -206,17 +207,25 @@ href=#xxx&lt;br /&gt;&lt;/li&gt;
 _blank在空白页面打开&lt;br /&gt;
 _top在顶级区域打开&lt;br /&gt;
 _parent在上一级区域打开&lt;br /&gt;
-_self在当前区域打开&lt;br /&gt;&lt;/li&gt;
+_self在当前区域打开&lt;br /&gt;
+以当前窗口打开为例&lt;br /&gt;
+&lt;img src=&#34;http://fjn618.xyz/images/html4.png&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;http://fjn618.xyz/images/html5.png&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;http://fjn618.xyz/images/html2.png&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;http://fjn618.xyz/images/html3.png&#34; alt=&#34;&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;程序员命名&lt;br /&gt;
 window的name&lt;br /&gt;
-iframe的name&lt;/li&gt;
+iframe的name&lt;br /&gt;
+&lt;img src=&#34;http://fjn618.xyz/images/htmla.png&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;http://fjn618.xyz/images/htmlb.png&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;http://fjn618.xyz/images/htmlc.png&#34; alt=&#34;&#34; /&gt;&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;table标签用法&#34;&gt;table标签用法&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;相关标签&lt;br /&gt;
+&lt;li&gt;&lt;p&gt;相关标签&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;thead头部&lt;br /&gt;&lt;/li&gt;
@@ -224,15 +233,61 @@ iframe的name&lt;/li&gt;
 &lt;li&gt;tfoot尾部&lt;/li&gt;
 &lt;li&gt;tr其中的一行&lt;/li&gt;
 &lt;li&gt;td数据&lt;/li&gt;
-&lt;li&gt;th表头&lt;br /&gt;
-table里只能有三个标签&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;th表头&lt;br /&gt;
+table里只能有三个标签&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+&amp;lt;table&amp;gt;
+&amp;lt;thead&amp;gt;
+    &amp;lt;th&amp;gt;&amp;lt;/th&amp;gt;
+    &amp;lt;th&amp;gt;包子&amp;lt;/th&amp;gt;
+    &amp;lt;th&amp;gt;烧卖&amp;lt;/th&amp;gt;
+    &amp;lt;th&amp;gt;小饼&amp;lt;/th&amp;gt;
+&amp;lt;/thead&amp;gt;
+&amp;lt;tbody&amp;gt;
+    &amp;lt;tr&amp;gt;
+        &amp;lt;th&amp;gt;肉馅&amp;lt;/th&amp;gt;
+        &amp;lt;th&amp;gt;7个&amp;lt;/th&amp;gt;
+        &amp;lt;th&amp;gt;2个&amp;lt;/th&amp;gt;
+        &amp;lt;th&amp;gt;5个&amp;lt;/th&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+        &amp;lt;th&amp;gt;素馅&amp;lt;/th&amp;gt;
+        &amp;lt;th&amp;gt;1个&amp;lt;/th&amp;gt;
+        &amp;lt;th&amp;gt;3个&amp;lt;/th&amp;gt;
+        &amp;lt;th&amp;gt;4个&amp;lt;/th&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+        &amp;lt;th&amp;gt;糖馅&amp;lt;/th&amp;gt;
+        &amp;lt;th&amp;gt;3个&amp;lt;/th&amp;gt;
+        &amp;lt;th&amp;gt;5个&amp;lt;/th&amp;gt;
+        &amp;lt;th&amp;gt;2个&amp;lt;/th&amp;gt;
+    &amp;lt;/tr&amp;gt;
+&amp;lt;/tbody&amp;gt;
+&amp;lt;tfoot&amp;gt;
+    &amp;lt;tr&amp;gt;
+        &amp;lt;th&amp;gt;总量&amp;lt;/th&amp;gt;
+        &amp;lt;td&amp;gt;11个&amp;lt;/td&amp;gt;
+        &amp;lt;td&amp;gt;10个&amp;lt;/td&amp;gt;
+        &amp;lt;td&amp;gt;11个&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+&amp;lt;/tfoot&amp;gt;
+&amp;lt;/table&amp;gt;
+&amp;lt;/body&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://fjn618.xyz/images/x.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;样式&lt;br /&gt;
+
+&lt;li&gt;&lt;p&gt;样式&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;table-layout宽度&lt;br /&gt;&lt;/li&gt;
 &lt;li&gt;border-collapse合并边距&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;border-spacing调整空隙&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;border-spacing调整空隙&lt;br /&gt;
+&lt;img src=&#34;http://fjn618.xyz/images/y.png&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;http://fjn618.xyz/images/z.png&#34; alt=&#34;&#34; /&gt;&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -249,7 +304,10 @@ src图片地址&lt;br /&gt;&lt;/li&gt;
 &lt;li&gt;事件&lt;br /&gt;
 onload/onerror监听图片是否加载成功&lt;br /&gt;&lt;/li&gt;
 &lt;li&gt;响应式&lt;br /&gt;
-max-width:100%&lt;br /&gt;&lt;/li&gt;
+max-width:100%&lt;br /&gt;
+&lt;img src=&#34;http://fjn618.xyz/images/11.png&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;http://fjn618.xyz/images/22.png&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;http://fjn618.xyz/images/33.png&#34; alt=&#34;&#34; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;form标签&#34;&gt;form标签&lt;/h3&gt;
@@ -300,6 +358,20 @@ onchange/onfocus/onblur&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;验证器&lt;br /&gt;
 html新增功能&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>包子的星球</title>
+      <link>http://fjn618.xyz/2019/%E5%8C%85%E5%AD%90%E7%9A%84%E6%98%9F%E7%90%83-copy/</link>
+      <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>
+      
+      <guid>http://fjn618.xyz/2019/%E5%8C%85%E5%AD%90%E7%9A%84%E6%98%9F%E7%90%83-copy/</guid>
+      <description>
+
+&lt;h1 id=&#34;hello&#34;&gt;hello&lt;/h1&gt;
+
+&lt;p&gt;19980618&lt;/p&gt;
 </description>
     </item>
     
