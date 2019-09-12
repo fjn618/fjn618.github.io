@@ -9,9 +9,9 @@
   
   
   
-  <link rel="prev" href="http://fjn618.xyz/2019/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" />
-  <link rel="next" href="http://fjn618.xyz/2019/css%E5%9F%BA%E7%A1%80/" />
-  <link rel="canonical" href="http://fjn618.xyz/2019/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/" />
+  <link rel="prev" href="http://fjn618.xyz/2019/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/" />
+  <link rel="next" href="http://fjn618.xyz/2019/hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
+  <link rel="canonical" href="http://fjn618.xyz/2019/css%E5%9F%BA%E7%A1%80/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           HTML入门笔记1 | 包子的小世界
+           css基础 | 包子的小世界
        
   </title>
-  <meta name="title" content="HTML入门笔记1 | 包子的小世界">
+  <meta name="title" content="css基础 | 包子的小世界">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "http:\/\/fjn618.xyz\/"
     },
     "articleSection" : "posts",
-    "name" : "HTML入门笔记1",
-    "headline" : "HTML入门笔记1",
-    "description" : " WWW:World Wide Web 万维网WWW=URL\x2bHTTP\x2bHTML\nHTML之父 Tim Berners-Lee,1990年左右基于互联网发明了万维网,用自己写的浏览器访问了自己的服务器,让每个人输入网址就能看到网页,2004年获得大英帝国爵级司令勋章.2017年被颁发图灵奖.\nHTML起手 \x26lt;!DOCTYPE html\x26gt; # 文档类型 \x26lt;html lang=\x26quot;en\x26quot;\x26gt; # 页面语言 中文通常改成zh-CN \x26lt;head\x26gt; \x26lt;meta charset=\x26quot;UTF-8\x26quot;\x26gt; # 支持所有语言标准 \x26lt;meta name=\x26quot;viewport\x26quot; content=\x26quot;width=device-width, initial-scale=1.0\x26quot;\x26gt; # 防止页面缩放 \x26lt;meta http-equiv=\x26quot;X-UA-Compatible\x26quot; content=\x26quot;ie=edge\x26quot;\x26gt; # 更新至最新页面版本 \x26lt;title\x26gt;Document\x26lt;\/title\x26gt; # 网页标题 \x26lt;\/head\x26gt; \x26lt;body\x26gt; \x26lt;\/body\x26gt; \x26lt;\/html\x26gt;  章节标签  标题h1~h6\n 章节section\n 文章article 段落p 头部header 主要内容main 旁支内容aside 划分div\n  全局属性  class标签分类 contenteditable用户可编辑 hidden隐藏 id不报错尽量使用class style html的属性,比css高一级,会被js覆盖 tabindex可交互属性 title提示  内容标签  ol\x2bli有序列表中的一项 ul\x2bli无序列表中的一项 dl\x2bdt\x2bdd描述列表 pre保留空格回车 hr分割线 br换行 a超链接 em语气的强调 strong内容的强调 code内容代码等宽 quote引用 blockquote换行引用  ",
+    "name" : "css基础",
+    "headline" : "css基础",
+    "description" : "如何查询哪些浏览器支持哪些特性 查询网站\n输入你想了解的样式\ncss语法  样式语法\n选择器{ 属性名: 属性值; \/*注释*\/ }  符号如果写错了,浏览器会警告.\n at语法\n@charset \x26ldquo;UTF-8\x26rdquo;;声明字符编码\n@import url(2.css);导入额外的css文件\n@media (min-width: 100px) and (max-width: 200px) { 语法1 }媒体查询\n 注意事项\n@charset必须放在第一行\n前两个at语法必须以分号;结尾\ncharset是字符集的意思,但UTF-8是字符编码\n  border调试法 给怀疑的元素加border,没出现效果说明选择器错了或者语法错了,出现了看看边界是否符合预期,bug解决了才可以把border删掉\ncss的border调试法相当于js的log调试法",
     "inLanguage" : "zh-Hans",
     "author" : "fujiaoning",
     "creator" : "fujiaoning",
@@ -56,8 +56,8 @@
     "copyrightYear" : "2019",
     "datePublished": "2019-08-29 15:31:37 \x2b0800 CST",
     "dateModified" : "2019-08-29 15:31:37 \x2b0800 CST",
-    "url" : "http:\/\/fjn618.xyz\/2019\/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01\/",
-    "wordCount" : "71",
+    "url" : "http:\/\/fjn618.xyz\/2019\/css%E5%9F%BA%E7%A1%80\/",
+    "wordCount" : "32",
     "keywords" : [  "包子的小世界"]
 }
 </script>
@@ -116,7 +116,7 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">HTML入门笔记1</h1>
+        <h1 class="post-title" itemprop="name headline">css基础</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="http://fjn618.xyz/" rel="author">fujiaoning</a> with ♥ 
                 <span class="post-time">
@@ -129,6 +129,8 @@
     <div class="post-content">
         
 
+        
+            
         
 
         
@@ -144,74 +146,46 @@
 
           
 
-<h3 id="www-world-wide-web">WWW:World Wide Web</h3>
+<h3 id="如何查询哪些浏览器支持哪些特性">如何查询哪些浏览器支持哪些特性</h3>
 
-<p>万维网WWW=URL+HTTP+HTML</p>
+<p><a href="https://caniuse.com" rel="nofollow noreferrer" target="_blank">查询网站</a></p>
 
-<h3 id="html之父">HTML之父</h3>
+<p>输入你想了解的样式<br />
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/images/ c1.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></p>
 
-<p>Tim Berners-Lee,1990年左右基于互联网发明了万维网,用自己写的浏览器访问了自己的服务器,让每个人输入网址就能看到网页,2004年获得大英帝国爵级司令勋章.2017年被颁发图灵奖.</p>
+<h3 id="css语法">css语法</h3>
 
-<h3 id="html起手">HTML起手</h3>
+<ol>
+<li><p>样式语法</p>
 
-<pre><code>&lt;!DOCTYPE html&gt; # 文档类型
-&lt;html lang=&quot;en&quot;&gt; # 页面语言 中文通常改成zh-CN
-
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt; # 支持所有语言标准
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt; # 防止页面缩放
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt; # 更新至最新页面版本
-    &lt;title&gt;Document&lt;/title&gt; # 网页标题
-&lt;/head&gt;
-
-&lt;body&gt;
-
-&lt;/body&gt;
-
-&lt;/html&gt; 
+<pre><code>选择器{
+属性名: 属性值;
+/*注释*/
+}
 </code></pre>
 
-<h3 id="章节标签">章节标签</h3>
+<p>符号如果写错了,浏览器会警告.<br />
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/images/css1.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></p></li>
 
-<ol>
-<li>标题h1~h6<br /></li>
-<li>章节section<br /></li>
-<li>文章article</li>
-<li>段落p</li>
-<li>头部header</li>
-<li>主要内容main</li>
-<li>旁支内容aside</li>
-<li>划分div<br /></li>
+<li><p>at语法<br />
+@charset &ldquo;UTF-8&rdquo;;声明字符编码<br />
+@import url(2.css);导入额外的css文件<br />
+@media (min-width: 100px) and (max-width: 200px) {
+语法1
+}媒体查询</p></li>
+
+<li><p>注意事项<br />
+@charset必须放在第一行<br />
+前两个at语法必须以分号;结尾<br />
+charset是字符集的意思,但UTF-8是字符编码</p></li>
 </ol>
 
-<h3 id="全局属性">全局属性</h3>
+<h3 id="border调试法">border调试法</h3>
 
-<ol>
-<li>class标签分类</li>
-<li>contenteditable用户可编辑</li>
-<li>hidden隐藏</li>
-<li>id不报错尽量使用class</li>
-<li>style html的属性,比css高一级,会被js覆盖</li>
-<li>tabindex可交互属性</li>
-<li>title提示</li>
-</ol>
+<p><figure><img src="/images/ring.svg" data-sizes="auto" data-src="/images/border.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure><br />
+给怀疑的元素加border,没出现效果说明选择器错了或者语法错了,出现了看看边界是否符合预期,bug解决了才可以把border删掉</p>
 
-<h3 id="内容标签">内容标签</h3>
-
-<ol>
-<li>ol+li有序列表中的一项</li>
-<li>ul+li无序列表中的一项</li>
-<li>dl+dt+dd描述列表</li>
-<li>pre保留空格回车</li>
-<li>hr分割线</li>
-<li>br换行</li>
-<li>a超链接</li>
-<li>em语气的强调</li>
-<li>strong内容的强调</li>
-<li>code内容代码等宽</li>
-<li>quote引用</li>
-<li>blockquote换行引用</li>
-</ol>
+<p>css的border调试法相当于js的log调试法</p>
 
     </div>
 
@@ -226,7 +200,7 @@
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=http://fjn618.xyz/2019/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/>http://fjn618.xyz/2019/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</span>
+                    <a href=http://fjn618.xyz/2019/css%E5%9F%BA%E7%A1%80/>http://fjn618.xyz/2019/css%E5%9F%BA%E7%A1%80/</span>
             </p>
             
             
@@ -243,10 +217,10 @@
 
     <div class="post-nav">
         
-        <a href="http://fjn618.xyz/2019/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="prev" rel="prev" title="HTML常用标签"><i class="iconfont icon-left"></i>&nbsp;HTML常用标签</a>
+        <a href="http://fjn618.xyz/2019/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/" class="prev" rel="prev" title="HTML入门笔记1"><i class="iconfont icon-left"></i>&nbsp;HTML入门笔记1</a>
          
         
-        <a href="http://fjn618.xyz/2019/css%E5%9F%BA%E7%A1%80/" class="next" rel="next" title="css基础">css基础&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="http://fjn618.xyz/2019/hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="next" rel="next" title="如何用 hugo 搭建个人博客">如何用 hugo 搭建个人博客&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -297,8 +271,9 @@
 
 
     
-    
-    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
     
   
 

@@ -46,6 +46,28 @@ baseURL = &amp;quot;https://你的域名/&amp;quot; languageCode = &amp;quot;zh-
     </item>
     
     <item>
+      <title>css基础</title>
+      <link>http://fjn618.xyz/2019/css%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>
+      
+      <guid>http://fjn618.xyz/2019/css%E5%9F%BA%E7%A1%80/</guid>
+      <description>如何查询哪些浏览器支持哪些特性 查询网站
+输入你想了解的样式
+css语法  样式语法
+选择器{ 属性名: 属性值; /*注释*/ }  符号如果写错了,浏览器会警告.
+ at语法
+@charset &amp;ldquo;UTF-8&amp;rdquo;;声明字符编码
+@import url(2.css);导入额外的css文件
+@media (min-width: 100px) and (max-width: 200px) { 语法1 }媒体查询
+ 注意事项
+@charset必须放在第一行
+前两个at语法必须以分号;结尾
+charset是字符集的意思,但UTF-8是字符编码
+  border调试法 给怀疑的元素加border,没出现效果说明选择器错了或者语法错了,出现了看看边界是否符合预期,bug解决了才可以把border删掉
+css的border调试法相当于js的log调试法</description>
+    </item>
+    
+    <item>
       <title>HTML入门笔记1</title>
       <link>http://fjn618.xyz/2019/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
       <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>

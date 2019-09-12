@@ -78,6 +78,57 @@ theme = &amp;quot;ananke&amp;quot;
     </item>
     
     <item>
+      <title>css基础</title>
+      <link>http://fjn618.xyz/2019/css%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>
+      
+      <guid>http://fjn618.xyz/2019/css%E5%9F%BA%E7%A1%80/</guid>
+      <description>
+
+&lt;h3 id=&#34;如何查询哪些浏览器支持哪些特性&#34;&gt;如何查询哪些浏览器支持哪些特性&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://caniuse.com&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;查询网站&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;输入你想了解的样式&lt;br /&gt;
+&lt;img src=&#34;http://fjn618.xyz/images/ c1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;css语法&#34;&gt;css语法&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;样式语法&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;选择器{
+属性名: 属性值;
+/*注释*/
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;符号如果写错了,浏览器会警告.&lt;br /&gt;
+&lt;img src=&#34;http://fjn618.xyz/images/css1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;at语法&lt;br /&gt;
+@charset &amp;ldquo;UTF-8&amp;rdquo;;声明字符编码&lt;br /&gt;
+@import url(2.css);导入额外的css文件&lt;br /&gt;
+@media (min-width: 100px) and (max-width: 200px) {
+语法1
+}媒体查询&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;注意事项&lt;br /&gt;
+@charset必须放在第一行&lt;br /&gt;
+前两个at语法必须以分号;结尾&lt;br /&gt;
+charset是字符集的意思,但UTF-8是字符编码&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;border调试法&#34;&gt;border调试法&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://fjn618.xyz/images/border.png&#34; alt=&#34;&#34; /&gt;&lt;br /&gt;
+给怀疑的元素加border,没出现效果说明选择器错了或者语法错了,出现了看看边界是否符合预期,bug解决了才可以把border删掉&lt;/p&gt;
+
+&lt;p&gt;css的border调试法相当于js的log调试法&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>HTML入门笔记1</title>
       <link>http://fjn618.xyz/2019/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
       <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>
