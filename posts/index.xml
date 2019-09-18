@@ -51,7 +51,7 @@ baseURL = &amp;quot;https://你的域名/&amp;quot; languageCode = &amp;quot;zh-
       <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>
       
       <guid>http://fjn618.xyz/2019/css%E5%9F%BA%E7%A1%80/</guid>
-      <description>如何查询哪些浏览器支持哪些特性 查询网站
+      <description> 如何查询哪些浏览器支持哪些特性 查询网站
 输入你想了解的样式
 css语法  样式语法
 选择器{ 属性名: 属性值; /*注释*/ }  符号如果写错了,浏览器会警告.
@@ -64,7 +64,27 @@ css语法  样式语法
 前两个at语法必须以分号;结尾
 charset是字符集的意思,但UTF-8是字符编码
   border调试法 给怀疑的元素加border,没出现效果说明选择器错了或者语法错了,出现了看看边界是否符合预期,bug解决了才可以把border删掉
-css的border调试法相当于js的log调试法</description>
+css的border调试法相当于js的log调试法
+文档流 文档流指文档中元素的流动方向
+1. 流动方向
+inline元素从左到右,到达最右边才会换行
+block元素从上到下,每一个都另起一行
+inline-block也是从左到右,但不会把自己分成两块 2. 宽度
+inline宽度为内部inline元素的和,不能用width指定
+block默认自动计算宽度,可用width指定
+inline-block结合前两者特点,可用width
+永远不要写宽度百分之百,会有bug
+3. 高度
+inline高度由line-height间接确定,跟height无关
+block高度由内部文档流元素决定,可以设height
+inline-block跟block类似,可以设置height
+overflow溢出  当内容大于容器 等内容的宽度或高度大于容器的会溢出
+可用overflow来设置是否显示滚动条
+auto是灵活设置
+scroll是永远显示
+hidden是直接隐藏溢出部分
+visible是直接显示溢出部分
+overflow可以分为overflow-x和overflow-y  </description>
     </item>
     
     <item>

@@ -125,6 +125,37 @@ charset是字符集的意思,但UTF-8是字符编码&lt;/p&gt;&lt;/li&gt;
 给怀疑的元素加border,没出现效果说明选择器错了或者语法错了,出现了看看边界是否符合预期,bug解决了才可以把border删掉&lt;/p&gt;
 
 &lt;p&gt;css的border调试法相当于js的log调试法&lt;/p&gt;
+
+&lt;h3 id=&#34;文档流&#34;&gt;文档流&lt;/h3&gt;
+
+&lt;p&gt;文档流指文档中元素的流动方向&lt;br /&gt;
+1. 流动方向&lt;br /&gt;
+   inline元素从左到右,到达最右边才会换行&lt;br /&gt;
+   block元素从上到下,每一个都另起一行&lt;br /&gt;
+   inline-block也是从左到右,但不会把自己分成两块
+   &lt;img src=&#34;http://fjn618.xyz/images/in.png&#34; alt=&#34;&#34; /&gt;&lt;br /&gt;
+2. 宽度&lt;br /&gt;
+   inline宽度为内部inline元素的和,不能用width指定&lt;br /&gt;
+   block默认自动计算宽度,可用width指定&lt;br /&gt;
+   inline-block结合前两者特点,可用width&lt;br /&gt;
+   永远不要写宽度百分之百,会有bug&lt;br /&gt;
+3. 高度&lt;br /&gt;
+   inline高度由line-height间接确定,跟height无关&lt;br /&gt;
+   block高度由内部文档流元素决定,可以设height&lt;br /&gt;
+   inline-block跟block类似,可以设置height&lt;/p&gt;
+
+&lt;h3 id=&#34;overflow溢出&#34;&gt;overflow溢出&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;当内容大于容器
+等内容的宽度或高度大于容器的会溢出&lt;br /&gt;
+可用overflow来设置是否显示滚动条&lt;br /&gt;
+auto是灵活设置&lt;br /&gt;
+scroll是永远显示&lt;br /&gt;
+hidden是直接隐藏溢出部分&lt;br /&gt;
+visible是直接显示溢出部分&lt;br /&gt;
+overflow可以分为overflow-x和overflow-y&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
