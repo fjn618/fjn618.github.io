@@ -6,49 +6,45 @@
     <description>Recent content in Posts on 包子的小世界</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 29 Aug 2019 17:18:26 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 18 Oct 2019 15:31:37 +0800</lastBuildDate>
     
 	<atom:link href="http://fjn618.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>如何用 hugo 搭建个人博客</title>
-      <link>http://fjn618.xyz/2019/hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Thu, 29 Aug 2019 17:18:26 +0800</pubDate>
+      <title>CSS 知识总结</title>
+      <link>http://fjn618.xyz/2019/css-%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Fri, 18 Oct 2019 15:31:37 +0800</pubDate>
       
-      <guid>http://fjn618.xyz/2019/hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
-      <description>Hugo:Go语言实现的博客生成器  第一步:下载hugo
- 安装hugo
-Mac安装方式
-brew install hugo
-hugo version
-Windows安装方式
-下载hugo_版本号_系统.zip 下载地址
-以我的版本为例 解压后得到hugo.exe文件
- 把hugo.exe所在的文件夹路径添加到path
-右键此电脑,进入属性,点击高级系统设置,选择环境变量,双击path,点击新建,将hugo.exe的路径粘贴后点击确定  重启终端,输入 hugo version 查看版本号
-  第二步:搭建框架
- 创建一个目录并进入它  进入hugo官网后点击quick start
- 从step2开始复制代码到终端
-step2:hugo new site quickstart
-创建一个名为quickstart的仓库,建议将名字更改为你的用户名.github.io-creator
-step3:
-cd quickstart
-git init
-git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
-echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml
-本地仓库初始化,并使用ananke主题进行美化 更多主题
-step4:hugo new posts/my-first-post.md
-添加了名为my-first-post的一篇内容
-step5:hugo server -D启动hugo
-step6:打开config.toml编辑以下内容
-baseURL = &amp;quot;https://你的域名/&amp;quot; languageCode = &amp;quot;zh-ch&amp;quot; title = &amp;quot;你的网站名&amp;quot; theme = &amp;quot;ananke&amp;quot;  step7:hugo构建静态页面</description>
+      <guid>http://fjn618.xyz/2019/css-%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</guid>
+      <description>浏览器渲染原理 浏览器渲染过程
+1. 根据HTML构建HTML树(DOM)
+2. 根据CSS构建CSS树(CSSOM)
+3. 将两棵树合并成一颗渲染树(render tree)
+4. Layout布局(文档流,盒模型,计算大小和位置)
+5. Paint绘制(把边框颜色,文字颜色,阴影等画出来)
+6. Compose合成(根据层叠关系展示画面)
+如何更新样式
+1. 第一种,全走
+div.remove()会触发当前消失,其他元素relayout
+2. 第二种,跳过layout
+改变背景颜色,直接repaint+composite
+3. 第三种,跳过layout和paint 改变transform,只需composite
+(注意全屏查看效果,在iframe里看有问题)
+每个属性对应的流程
+transform
+css性能优化之一&amp;mdash;&amp;mdash;把left改成transform
+其他优化方式
+JS优化
+使用requestAnimationFrame代替setTimeout或setInterval
+css优化
+使用will-change或translate</description>
     </item>
     
     <item>
-      <title>css基础</title>
+      <title>CSS 基础</title>
       <link>http://fjn618.xyz/2019/css%E5%9F%BA%E7%A1%80/</link>
-      <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>
+      <pubDate>Wed, 09 Oct 2019 15:31:37 +0800</pubDate>
       
       <guid>http://fjn618.xyz/2019/css%E5%9F%BA%E7%A1%80/</guid>
       <description> 如何查询哪些浏览器支持哪些特性 查询网站
@@ -85,6 +81,40 @@ scroll是永远显示
 hidden是直接隐藏溢出部分
 visible是直接显示溢出部分
 overflow可以分为overflow-x和overflow-y  </description>
+    </item>
+    
+    <item>
+      <title>如何用 hugo 搭建个人博客</title>
+      <link>http://fjn618.xyz/2019/hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Thu, 29 Aug 2019 17:18:26 +0800</pubDate>
+      
+      <guid>http://fjn618.xyz/2019/hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>Hugo:Go语言实现的博客生成器  第一步:下载hugo
+ 安装hugo
+Mac安装方式
+brew install hugo
+hugo version
+Windows安装方式
+下载hugo_版本号_系统.zip 下载地址
+以我的版本为例 解压后得到hugo.exe文件
+ 把hugo.exe所在的文件夹路径添加到path
+右键此电脑,进入属性,点击高级系统设置,选择环境变量,双击path,点击新建,将hugo.exe的路径粘贴后点击确定  重启终端,输入 hugo version 查看版本号
+  第二步:搭建框架
+ 创建一个目录并进入它  进入hugo官网后点击quick start
+ 从step2开始复制代码到终端
+step2:hugo new site quickstart
+创建一个名为quickstart的仓库,建议将名字更改为你的用户名.github.io-creator
+step3:
+cd quickstart
+git init
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml
+本地仓库初始化,并使用ananke主题进行美化 更多主题
+step4:hugo new posts/my-first-post.md
+添加了名为my-first-post的一篇内容
+step5:hugo server -D启动hugo
+step6:打开config.toml编辑以下内容
+baseURL = &amp;quot;https://你的域名/&amp;quot; languageCode = &amp;quot;zh-ch&amp;quot; title = &amp;quot;你的网站名&amp;quot; theme = &amp;quot;ananke&amp;quot;  step7:hugo构建静态页面</description>
     </item>
     
     <item>
@@ -139,15 +169,6 @@ iframe的name
  tfoot尾部 tr其中的一行 td数据 th表头
 table里只能有三个标签
 &amp;lt;body&amp;gt; &amp;lt;table&amp;gt; &amp;lt;thead&amp;gt; &amp;lt;th&amp;gt;&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;包子&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;烧卖&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;小饼&amp;lt;/th&amp;gt; &amp;lt;/thead&amp;gt; &amp;lt;tbody&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;th&amp;gt;肉馅&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;7个&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;2个&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;5个&amp;lt;/th&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;th&amp;gt;素馅&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;1个&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;3个&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;4个&amp;lt;/th&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;th&amp;gt;糖馅&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;3个&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;5个&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;2个&amp;lt;/th&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/tbody&amp;gt; &amp;lt;tfoot&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;th&amp;gt;总量&amp;lt;/th&amp;gt; &amp;lt;td&amp;gt;11个&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;10个&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;11个&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/tfoot&amp;gt; &amp;lt;/table&amp;gt; &amp;lt;/body&amp;gt;    样式</description>
-    </item>
-    
-    <item>
-      <title>包子的星球</title>
-      <link>http://fjn618.xyz/2019/%E5%8C%85%E5%AD%90%E7%9A%84%E6%98%9F%E7%90%83-copy/</link>
-      <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>
-      
-      <guid>http://fjn618.xyz/2019/%E5%8C%85%E5%AD%90%E7%9A%84%E6%98%9F%E7%90%83-copy/</guid>
-      <description>hello 19980618</description>
     </item>
     
     <item>

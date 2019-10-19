@@ -9,9 +9,9 @@
   
   
   
+  <link rel="prev" href="http://fjn618.xyz/2019/css%E5%9F%BA%E7%A1%80/" />
   
-  <link rel="next" href="http://fjn618.xyz/2019/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" />
-  <link rel="canonical" href="http://fjn618.xyz/2019/%E5%8C%85%E5%AD%90%E7%9A%84%E6%98%9F%E7%90%83/" />
+  <link rel="canonical" href="http://fjn618.xyz/2019/css-%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           包子的星球 | 包子的小世界
+           CSS 知识总结 | 包子的小世界
        
   </title>
-  <meta name="title" content="包子的星球 | 包子的小世界">
+  <meta name="title" content="CSS 知识总结 | 包子的小世界">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "http:\/\/fjn618.xyz\/"
     },
     "articleSection" : "posts",
-    "name" : "包子的星球",
-    "headline" : "包子的星球",
-    "description" : "hello 19980618",
+    "name" : "CSS 知识总结",
+    "headline" : "CSS 知识总结",
+    "description" : "浏览器渲染原理 浏览器渲染过程\n1. 根据HTML构建HTML树(DOM)\n2. 根据CSS构建CSS树(CSSOM)\n3. 将两棵树合并成一颗渲染树(render tree)\n4. Layout布局(文档流,盒模型,计算大小和位置)\n5. Paint绘制(把边框颜色,文字颜色,阴影等画出来)\n6. Compose合成(根据层叠关系展示画面)\n如何更新样式\n1. 第一种,全走\ndiv.remove()会触发当前消失,其他元素relayout\n2. 第二种,跳过layout\n改变背景颜色,直接repaint\x2bcomposite\n3. 第三种,跳过layout和paint 改变transform,只需composite\n(注意全屏查看效果,在iframe里看有问题)\n每个属性对应的流程\ntransform\ncss性能优化之一\x26mdash;\x26mdash;把left改成transform\n其他优化方式\nJS优化\n使用requestAnimationFrame代替setTimeout或setInterval\ncss优化\n使用will-change或translate",
     "inLanguage" : "zh-Hans",
     "author" : "fujiaoning",
     "creator" : "fujiaoning",
@@ -54,10 +54,10 @@
     "accountablePerson" : "fujiaoning",
     "copyrightHolder" : "fujiaoning",
     "copyrightYear" : "2019",
-    "datePublished": "2019-08-29 15:31:37 \x2b0800 CST",
-    "dateModified" : "2019-08-29 15:31:37 \x2b0800 CST",
-    "url" : "http:\/\/fjn618.xyz\/2019\/%E5%8C%85%E5%AD%90%E7%9A%84%E6%98%9F%E7%90%83\/",
-    "wordCount" : "2",
+    "datePublished": "2019-10-18 15:31:37 \x2b0800 CST",
+    "dateModified" : "2019-10-18 15:31:37 \x2b0800 CST",
+    "url" : "http:\/\/fjn618.xyz\/2019\/css-%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93\/",
+    "wordCount" : "34",
     "keywords" : [  "包子的小世界"]
 }
 </script>
@@ -116,11 +116,11 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">包子的星球</h1>
+        <h1 class="post-title" itemprop="name headline">CSS 知识总结</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="http://fjn618.xyz/" rel="author">fujiaoning</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2019-08-29 itemprop="datePublished">August 29, 2019</time>
+                on <time datetime=2019-10-18 itemprop="datePublished">October 18, 2019</time>
                 </span>
                 in
                 
@@ -144,9 +144,33 @@
 
           
 
-<h1 id="hello">hello</h1>
+<h3 id="浏览器渲染原理">浏览器渲染原理</h3>
 
-<p>19980618</p>
+<p>浏览器渲染过程<br />
+ 1. 根据HTML构建HTML树(DOM)<br />
+ 2. 根据CSS构建CSS树(CSSOM)<br />
+ 3. 将两棵树合并成一颗渲染树(render tree)<br />
+ 4. Layout布局(文档流,盒模型,计算大小和位置)<br />
+ 5. Paint绘制(把边框颜色,文字颜色,阴影等画出来)<br />
+ 6. Compose合成(根据层叠关系展示画面)</p>
+
+<p>如何更新样式<br />
+1. 第一种,全走<br />
+   div.remove()会触发当前消失,其他元素relayout<br />
+2. 第二种,跳过layout<br />
+   改变背景颜色,直接repaint+composite<br />
+3. 第三种,跳过layout和paint
+   改变transform,只需composite<br />
+   (注意全屏查看效果,在iframe里看有问题)<br />
+<a href="https://csstriggers.com/" rel="nofollow noreferrer" target="_blank">每个属性对应的流程</a></p>
+
+<p>transform<br />
+css性能优化之一&mdash;&mdash;把left改成transform<br />
+<a href="https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count" rel="nofollow noreferrer" target="_blank">其他优化方式</a><br />
+JS优化<br />
+使用requestAnimationFrame代替setTimeout或setInterval<br />
+css优化<br />
+使用will-change或translate</p>
 
     </div>
 
@@ -161,7 +185,7 @@
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=http://fjn618.xyz/2019/%E5%8C%85%E5%AD%90%E7%9A%84%E6%98%9F%E7%90%83/>http://fjn618.xyz/2019/%E5%8C%85%E5%AD%90%E7%9A%84%E6%98%9F%E7%90%83/</span>
+                    <a href=http://fjn618.xyz/2019/css-%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/>http://fjn618.xyz/2019/css-%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</span>
             </p>
             
             
@@ -177,9 +201,9 @@
     </div>
 
     <div class="post-nav">
-         
         
-        <a href="http://fjn618.xyz/2019/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="next" rel="next" title="HTML常用标签">HTML常用标签&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="http://fjn618.xyz/2019/css%E5%9F%BA%E7%A1%80/" class="prev" rel="prev" title="CSS 基础"><i class="iconfont icon-left"></i>&nbsp;CSS 基础</a>
+         
         
     </div>
 
