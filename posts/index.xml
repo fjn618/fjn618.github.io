@@ -190,5 +190,24 @@ table里只能有三个标签
       <description>hello 19980618</description>
     </item>
     
+    <item>
+      <title>浅析 URL</title>
+      <link>http://fjn618.xyz/2019/%E6%B5%85%E6%9E%90-url/</link>
+      <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>
+      
+      <guid>http://fjn618.xyz/2019/%E6%B5%85%E6%9E%90-url/</guid>
+      <description>URL 协议: 基于TCP和IP两个协议
+域名/IP:分为内网和外网 一个域名可以对应不同IP&amp;ndash;均衡负载,一个IP可以对应不同域名&amp;ndash;共享主机
+端口号:对应不同的服务 port 0~1023留给系统使用 其他给普通用户使用
+路径:请求不同的页面
+查询字符串: 同一个页面,不同内容
+锚点:同一个内容,不同位置 DNS 作用: 将域名和IP对应
+nslookup命令: 查询DNS的记录，查看域名解析是否正常，在网络故障的时候用来诊断网络问题。
+IP 作用: 定位区别不同的主机
+特殊IP:123.0.0.1表示自己,localhost通过hosts指定为自己,0.0.0.0不表示任何设备
+ping命令: ping baidu.com 可得到百度的ip
+域名 com是顶级域名,xxx.com是二级域名,www.xxx.com是三级域名</description>
+    </item>
+    
   </channel>
 </rss>
