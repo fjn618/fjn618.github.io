@@ -43,6 +43,20 @@ JS优化&lt;br /&gt;
 使用requestAnimationFrame代替setTimeout或setInterval&lt;br /&gt;
 css优化&lt;br /&gt;
 使用will-change或translate&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;transform全解&amp;ndash;mdn&lt;/a&gt;&lt;br /&gt;
+四个常用功能&lt;br /&gt;
+1. 位移translate&lt;br /&gt;
+2. 缩放scale&lt;br /&gt;
+3. 旋转rotate&lt;br /&gt;
+4. 倾斜skew&lt;br /&gt;
+一般都需要配合transition过渡&lt;br /&gt;
+inline元素不支持transform,需要先变成block&lt;/p&gt;
+
+&lt;h3 id=&#34;css动画&#34;&gt;css动画&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://js.jirengu.com/maweqixaqu/1/edit?html,css,output&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;transform、transition 和 :hover 制作一颗会动的红心&lt;/a&gt;&lt;br /&gt;
+ &lt;a href=&#34;http://js.jirengu.com/wogisaxeba/1/edit&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;animation 制作一颗会动的红心&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

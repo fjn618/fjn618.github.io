@@ -38,7 +38,17 @@ css性能优化之一&amp;mdash;&amp;mdash;把left改成transform
 JS优化
 使用requestAnimationFrame代替setTimeout或setInterval
 css优化
-使用will-change或translate</description>
+使用will-change或translate
+transform全解&amp;ndash;mdn
+四个常用功能
+1. 位移translate
+2. 缩放scale
+3. 旋转rotate
+4. 倾斜skew
+一般都需要配合transition过渡
+inline元素不支持transform,需要先变成block
+css动画 transform、transition 和 :hover 制作一颗会动的红心
+animation 制作一颗会动的红心</description>
     </item>
     
     <item>

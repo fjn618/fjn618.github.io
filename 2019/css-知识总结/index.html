@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "CSS 知识总结",
     "headline" : "CSS 知识总结",
-    "description" : "浏览器渲染原理 浏览器渲染过程\n1. 根据HTML构建HTML树(DOM)\n2. 根据CSS构建CSS树(CSSOM)\n3. 将两棵树合并成一颗渲染树(render tree)\n4. Layout布局(文档流,盒模型,计算大小和位置)\n5. Paint绘制(把边框颜色,文字颜色,阴影等画出来)\n6. Compose合成(根据层叠关系展示画面)\n如何更新样式\n1. 第一种,全走\ndiv.remove()会触发当前消失,其他元素relayout\n2. 第二种,跳过layout\n改变背景颜色,直接repaint\x2bcomposite\n3. 第三种,跳过layout和paint 改变transform,只需composite\n(注意全屏查看效果,在iframe里看有问题)\n每个属性对应的流程\ntransform\ncss性能优化之一\x26mdash;\x26mdash;把left改成transform\n其他优化方式\nJS优化\n使用requestAnimationFrame代替setTimeout或setInterval\ncss优化\n使用will-change或translate",
+    "description" : "浏览器渲染原理 浏览器渲染过程\n1. 根据HTML构建HTML树(DOM)\n2. 根据CSS构建CSS树(CSSOM)\n3. 将两棵树合并成一颗渲染树(render tree)\n4. Layout布局(文档流,盒模型,计算大小和位置)\n5. Paint绘制(把边框颜色,文字颜色,阴影等画出来)\n6. Compose合成(根据层叠关系展示画面)\n如何更新样式\n1. 第一种,全走\ndiv.remove()会触发当前消失,其他元素relayout\n2. 第二种,跳过layout\n改变背景颜色,直接repaint\x2bcomposite\n3. 第三种,跳过layout和paint 改变transform,只需composite\n(注意全屏查看效果,在iframe里看有问题)\n每个属性对应的流程\ntransform\ncss性能优化之一\x26mdash;\x26mdash;把left改成transform\n其他优化方式\nJS优化\n使用requestAnimationFrame代替setTimeout或setInterval\ncss优化\n使用will-change或translate\ntransform全解\x26ndash;mdn\n四个常用功能\n1. 位移translate\n2. 缩放scale\n3. 旋转rotate\n4. 倾斜skew\n一般都需要配合transition过渡\ninline元素不支持transform,需要先变成block\ncss动画 transform、transition 和 :hover 制作一颗会动的红心\nanimation 制作一颗会动的红心",
     "inLanguage" : "zh-Hans",
     "author" : "fujiaoning",
     "creator" : "fujiaoning",
@@ -57,7 +57,7 @@
     "datePublished": "2019-10-18 15:31:37 \x2b0800 CST",
     "dateModified" : "2019-10-18 15:31:37 \x2b0800 CST",
     "url" : "http:\/\/fjn618.xyz\/2019\/css-%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93\/",
-    "wordCount" : "34",
+    "wordCount" : "53",
     "keywords" : [  "包子的小世界"]
 }
 </script>
@@ -171,6 +171,20 @@ JS优化<br />
 使用requestAnimationFrame代替setTimeout或setInterval<br />
 css优化<br />
 使用will-change或translate</p>
+
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform" rel="nofollow noreferrer" target="_blank">transform全解&ndash;mdn</a><br />
+四个常用功能<br />
+1. 位移translate<br />
+2. 缩放scale<br />
+3. 旋转rotate<br />
+4. 倾斜skew<br />
+一般都需要配合transition过渡<br />
+inline元素不支持transform,需要先变成block</p>
+
+<h3 id="css动画">css动画</h3>
+
+<p><a href="http://js.jirengu.com/maweqixaqu/1/edit?html,css,output" rel="nofollow noreferrer" target="_blank">transform、transition 和 :hover 制作一颗会动的红心</a><br />
+ <a href="http://js.jirengu.com/wogisaxeba/1/edit" rel="nofollow noreferrer" target="_blank">animation 制作一颗会动的红心</a></p>
 
     </div>
 
