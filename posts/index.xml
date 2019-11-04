@@ -182,6 +182,23 @@ table里只能有三个标签
     </item>
     
     <item>
+      <title>JavaScript的诞生</title>
+      <link>http://fjn618.xyz/2019/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</link>
+      <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>
+      
+      <guid>http://fjn618.xyz/2019/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</guid>
+      <description>系统程序员Brendan Eich 用10天时间设计了Javascript
+1）借鉴C语言的基本语法；
+2）借鉴Java语言的数据类型和内存管理；
+3）借鉴Scheme语言，将函数提升到&amp;rdquo;第一等公民&amp;rdquo;（first class）的地位；
+4）借鉴Self语言，使用基于原型（prototype）的继承机制。
+JavaScript是一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。
+为了取得技术优势，微软推出了JScript，CEnvi推出ScriptEase，与JavaScript同样可在浏览器上运行。为了统一规格，JavaScript兼容于ECMA标准，因此也称为ECMAScript。
+目前世界上使用最广泛的 JS 版本（IE 6 支持的版本）是第三版
+截止到 2020 年，全球浏览器市场份额最高的浏览器是chrome</description>
+    </item>
+    
+    <item>
       <title>包子的星球</title>
       <link>http://fjn618.xyz/2019/%E5%8C%85%E5%AD%90%E7%9A%84%E6%98%9F%E7%90%83/</link>
       <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>
