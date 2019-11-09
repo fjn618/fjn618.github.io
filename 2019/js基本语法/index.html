@@ -9,9 +9,9 @@
   
   
   
-  <link rel="prev" href="http://fjn618.xyz/2019/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" />
-  <link rel="next" href="http://fjn618.xyz/2019/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" />
-  <link rel="canonical" href="http://fjn618.xyz/2019/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/" />
+  <link rel="prev" href="http://fjn618.xyz/2019/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/" />
+  <link rel="next" href="http://fjn618.xyz/2019/hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
+  <link rel="canonical" href="http://fjn618.xyz/2019/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           HTML入门笔记1 | 包子的小世界
+            JS 的基本语法 | 包子的小世界
        
   </title>
-  <meta name="title" content="HTML入门笔记1 | 包子的小世界">
+  <meta name="title" content=" JS 的基本语法 | 包子的小世界">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "http:\/\/fjn618.xyz\/"
     },
     "articleSection" : "posts",
-    "name" : "HTML入门笔记1",
-    "headline" : "HTML入门笔记1",
-    "description" : " WWW:World Wide Web 万维网WWW=URL\x2bHTTP\x2bHTML\nHTML之父 Tim Berners-Lee,1990年左右基于互联网发明了万维网,用自己写的浏览器访问了自己的服务器,让每个人输入网址就能看到网页,2004年获得大英帝国爵级司令勋章.2017年被颁发图灵奖.\nHTML起手 \x26lt;!DOCTYPE html\x26gt; # 文档类型 \x26lt;html lang=\x26quot;en\x26quot;\x26gt; # 页面语言 中文通常改成zh-CN \x26lt;head\x26gt; \x26lt;meta charset=\x26quot;UTF-8\x26quot;\x26gt; # 支持所有语言标准 \x26lt;meta name=\x26quot;viewport\x26quot; content=\x26quot;width=device-width, initial-scale=1.0\x26quot;\x26gt; # 防止页面缩放 \x26lt;meta http-equiv=\x26quot;X-UA-Compatible\x26quot; content=\x26quot;ie=edge\x26quot;\x26gt; # 更新至最新页面版本 \x26lt;title\x26gt;Document\x26lt;\/title\x26gt; # 网页标题 \x26lt;\/head\x26gt; \x26lt;body\x26gt; \x26lt;\/body\x26gt; \x26lt;\/html\x26gt;  章节标签  标题h1~h6\n 章节section\n 文章article 段落p 头部header 主要内容main 旁支内容aside 划分div\n  全局属性  class标签分类 contenteditable用户可编辑 hidden隐藏 id不报错尽量使用class style html的属性,比css高一级,会被js覆盖 tabindex可交互属性 title提示  内容标签  ol\x2bli有序列表中的一项 ul\x2bli无序列表中的一项 dl\x2bdt\x2bdd描述列表 pre保留空格回车 hr分割线 br换行 a超链接 em语气的强调 strong内容的强调 code内容代码等宽 quote引用 blockquote换行引用  ",
+    "name" : " JS 的基本语法",
+    "headline" : " JS 的基本语法",
+    "description" : "表达式和语句  表达式\n1\x2b2表达式的值为3\nadd(1,2)表达式的值为函数的返回值,只有函数有返回值\nconsole.log表达式的值为函数本身 console.log(3)表达式的值为 undefined\n 语句\nvar a=1是一个语句\n 二者的区别\n表达式一般都有值,语句可能有也可能没有\n  大部分空格和回车没有实际意义,只有一个地法不能加回车,return的后面\n标识符的规则 第一个字符,可以是Unicode字母或$或 _ 或中文\n后面的字符除了上面还可以有数字\n变量名是标识符\nvar_=1\nvar$=2\nvar______=6\nvar你好=\x26lsquo;hi\x26rsquo;\nif else 语句 if (表达式){语句1}else{语句2}\n{}在语句只有一句的时候可以省略 最推荐的写法\nif (表达式) {\n语句\n} else if (表达式) {\n语句\n} else {\n语句\n}\nwhile for 语句 while\n* while(表达式){语句}\n判断表达式的真假\n当表达式为真,执行语句,执行完再判断表达式的真假\n当表达式为假,执行后面的语句\n* for\nfor(语句1;表达式2;语句3){ 循环体 }\n先执行语句1 然后判断表达式2 如果为真,执行循环体,然后执行语句3\n如果为假,直接退出循环,执行后面的语句\nbreak continue break:退出所有循环",
     "inLanguage" : "zh-Hans",
     "author" : "fujiaoning",
     "creator" : "fujiaoning",
@@ -56,8 +56,8 @@
     "copyrightYear" : "2019",
     "datePublished": "2019-08-29 15:31:37 \x2b0800 CST",
     "dateModified" : "2019-08-29 15:31:37 \x2b0800 CST",
-    "url" : "http:\/\/fjn618.xyz\/2019\/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01\/",
-    "wordCount" : "71",
+    "url" : "http:\/\/fjn618.xyz\/2019\/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95\/",
+    "wordCount" : "77",
     "keywords" : [  "包子的小世界"]
 }
 </script>
@@ -116,7 +116,7 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">HTML入门笔记1</h1>
+        <h1 class="post-title" itemprop="name headline"> JS 的基本语法</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="http://fjn618.xyz/" rel="author">fujiaoning</a> with ♥ 
                 <span class="post-time">
@@ -144,74 +144,75 @@
 
           
 
-<h3 id="www-world-wide-web">WWW:World Wide Web</h3>
+<h3 id="表达式和语句">表达式和语句</h3>
 
-<p>万维网WWW=URL+HTTP+HTML</p>
+<ul>
+<li>表达式<br />
+1+2表达式的值为3<br />
+add(1,2)表达式的值为函数的返回值,只有函数有返回值<br />
+console.log表达式的值为函数本身
+console.log(3)表达式的值为 undefined<br /></li>
+<li>语句<br />
+var a=1是一个语句<br /></li>
+<li>二者的区别<br />
+表达式一般都有值,语句可能有也可能没有<br /></li>
+</ul>
 
-<h3 id="html之父">HTML之父</h3>
+<p>大部分空格和回车没有实际意义,只有一个地法不能加回车,return的后面</p>
 
-<p>Tim Berners-Lee,1990年左右基于互联网发明了万维网,用自己写的浏览器访问了自己的服务器,让每个人输入网址就能看到网页,2004年获得大英帝国爵级司令勋章.2017年被颁发图灵奖.</p>
+<h3 id="标识符的规则">标识符的规则</h3>
 
-<h3 id="html起手">HTML起手</h3>
+<p>第一个字符,可以是Unicode字母或$或 _ 或中文<br />
+后面的字符除了上面还可以有数字<br />
+变量名是标识符<br />
+var_=1<br />
+var$=2<br />
+var______=6<br />
+var你好=&lsquo;hi&rsquo;</p>
 
-<pre><code>&lt;!DOCTYPE html&gt; # 文档类型
-&lt;html lang=&quot;en&quot;&gt; # 页面语言 中文通常改成zh-CN
+<h3 id="if-else-语句">if else 语句</h3>
 
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt; # 支持所有语言标准
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt; # 防止页面缩放
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt; # 更新至最新页面版本
-    &lt;title&gt;Document&lt;/title&gt; # 网页标题
-&lt;/head&gt;
+<p>if (表达式){语句1}else{语句2}<br />
+{}在语句只有一句的时候可以省略  <br />
+最推荐的写法<br />
+if (表达式) {<br />
+    语句<br />
+} else if (表达式) {<br />
+    语句<br />
+} else {<br />
+    语句<br />
+}</p>
 
-&lt;body&gt;
+<h3 id="while-for-语句">while for 语句</h3>
 
-&lt;/body&gt;
+<p>while<br />
+* while(表达式){语句}<br />
+判断表达式的真假<br />
+当表达式为真,执行语句,执行完再判断表达式的真假<br />
+当表达式为假,执行后面的语句<br />
+* for<br />
+for(语句1;表达式2;语句3){
+    循环体
+}<br />
+先执行语句1
+然后判断表达式2
+如果为真,执行循环体,然后执行语句3<br />
+如果为假,直接退出循环,执行后面的语句</p>
 
-&lt;/html&gt; 
-</code></pre>
+<h3 id="break-continue">break continue</h3>
 
-<h3 id="章节标签">章节标签</h3>
+<p>break:退出所有循环<br />
+continue:退出当前一次循环</p>
 
-<ol>
-<li>标题h1~h6<br /></li>
-<li>章节section<br /></li>
-<li>文章article</li>
-<li>段落p</li>
-<li>头部header</li>
-<li>主要内容main</li>
-<li>旁支内容aside</li>
-<li>划分div<br /></li>
-</ol>
+<h3 id="label">label</h3>
 
-<h3 id="全局属性">全局属性</h3>
-
-<ol>
-<li>class标签分类</li>
-<li>contenteditable用户可编辑</li>
-<li>hidden隐藏</li>
-<li>id不报错尽量使用class</li>
-<li>style html的属性,比css高一级,会被js覆盖</li>
-<li>tabindex可交互属性</li>
-<li>title提示</li>
-</ol>
-
-<h3 id="内容标签">内容标签</h3>
-
-<ol>
-<li>ol+li有序列表中的一项</li>
-<li>ul+li无序列表中的一项</li>
-<li>dl+dt+dd描述列表</li>
-<li>pre保留空格回车</li>
-<li>hr分割线</li>
-<li>br换行</li>
-<li>a超链接</li>
-<li>em语气的强调</li>
-<li>strong内容的强调</li>
-<li>code内容代码等宽</li>
-<li>quote引用</li>
-<li>blockquote换行引用</li>
-</ol>
+<p>语法<br />
+foo: {<br />
+    console.log(1);
+    break foo;<br />
+    console.log(&lsquo;本行不会输出&rsquo;)
+}<br />
+console.log(2);</p>
 
     </div>
 
@@ -226,7 +227,7 @@
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=http://fjn618.xyz/2019/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/>http://fjn618.xyz/2019/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</span>
+                    <a href=http://fjn618.xyz/2019/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/>http://fjn618.xyz/2019/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</span>
             </p>
             
             
@@ -243,10 +244,10 @@
 
     <div class="post-nav">
         
-        <a href="http://fjn618.xyz/2019/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="prev" rel="prev" title="HTML常用标签"><i class="iconfont icon-left"></i>&nbsp;HTML常用标签</a>
+        <a href="http://fjn618.xyz/2019/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/" class="prev" rel="prev" title="HTML入门笔记1"><i class="iconfont icon-left"></i>&nbsp;HTML入门笔记1</a>
          
         
-        <a href="http://fjn618.xyz/2019/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" class="next" rel="next" title=" JS 的基本语法"> JS 的基本语法&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="http://fjn618.xyz/2019/hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="next" rel="next" title="如何用 hugo 搭建个人博客">如何用 hugo 搭建个人博客&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 

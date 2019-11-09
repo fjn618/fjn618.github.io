@@ -128,6 +128,49 @@ baseURL = &amp;quot;https://你的域名/&amp;quot; languageCode = &amp;quot;zh-
     </item>
     
     <item>
+      <title> JS 的基本语法</title>
+      <link>http://fjn618.xyz/2019/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>
+      
+      <guid>http://fjn618.xyz/2019/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid>
+      <description>表达式和语句  表达式
+1+2表达式的值为3
+add(1,2)表达式的值为函数的返回值,只有函数有返回值
+console.log表达式的值为函数本身 console.log(3)表达式的值为 undefined
+ 语句
+var a=1是一个语句
+ 二者的区别
+表达式一般都有值,语句可能有也可能没有
+  大部分空格和回车没有实际意义,只有一个地法不能加回车,return的后面
+标识符的规则 第一个字符,可以是Unicode字母或$或 _ 或中文
+后面的字符除了上面还可以有数字
+变量名是标识符
+var_=1
+var$=2
+var______=6
+var你好=&amp;lsquo;hi&amp;rsquo;
+if else 语句 if (表达式){语句1}else{语句2}
+{}在语句只有一句的时候可以省略 最推荐的写法
+if (表达式) {
+语句
+} else if (表达式) {
+语句
+} else {
+语句
+}
+while for 语句 while
+* while(表达式){语句}
+判断表达式的真假
+当表达式为真,执行语句,执行完再判断表达式的真假
+当表达式为假,执行后面的语句
+* for
+for(语句1;表达式2;语句3){ 循环体 }
+先执行语句1 然后判断表达式2 如果为真,执行循环体,然后执行语句3
+如果为假,直接退出循环,执行后面的语句
+break continue break:退出所有循环</description>
+    </item>
+    
+    <item>
       <title>HTML入门笔记1</title>
       <link>http://fjn618.xyz/2019/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
       <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>
