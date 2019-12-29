@@ -605,6 +605,100 @@ html新增功能&lt;/p&gt;&lt;/li&gt;
     </item>
     
     <item>
+      <title>JS 对象基本用法</title>
+      <link>http://fjn618.xyz/2019/js-%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>
+      
+      <guid>http://fjn618.xyz/2019/js-%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      <description>
+
+&lt;h3 id=&#34;1-声明对象的两种语法&#34;&gt;1：声明对象的两种语法&lt;/h3&gt;
+
+&lt;p&gt;let obj = {&amp;lsquo;name&amp;rsquo;:&amp;lsquo;fu&amp;rsquo;}&lt;br /&gt;
+console.log({&amp;lsquo;name&amp;rsquo;:&amp;lsquo;fu&amp;rsquo;,&amp;lsquo;age&amp;rsquo;,18})&lt;/p&gt;
+
+&lt;h3 id=&#34;2-如何删除对象的属性&#34;&gt;2：如何删除对象的属性&lt;/h3&gt;
+
+&lt;p&gt;delete obj.xxx或delete obj[&amp;lsquo;xxx&amp;rsquo;]&lt;br /&gt;
+不含属性名&lt;br /&gt;
+&amp;lsquo;xxx&amp;rsquo; in obj === false&lt;br /&gt;
+含有属性名,但是值为undefined&lt;br /&gt;
+&amp;lsquo;xxx&amp;rsquo; in obj&amp;amp;&amp;amp;obj.xxx === undefined&lt;/p&gt;
+
+&lt;h3 id=&#34;3-如何查看对象的属性&#34;&gt;3：如何查看对象的属性&lt;/h3&gt;
+
+&lt;p&gt;中括号语法:obj[&amp;lsquo;key&amp;rsquo;]&lt;br /&gt;
+点语法:obj.key&lt;br /&gt;
+优先使用中括号语法&lt;br /&gt;
+查看自身所有属性&lt;br /&gt;
+Object.keys(obj)&lt;br /&gt;
+查看自身+共有属性&lt;br /&gt;
+console.dir(obj)&lt;br /&gt;
+或者自己依次用Object.keys打印出obj._ _ proto _ _&lt;br /&gt;
+判断一个属性是自身的还是共有的&lt;br /&gt;
+obj.hasOwnProperty(&amp;lsquo;toString&amp;rsquo;)&lt;/p&gt;
+
+&lt;h3 id=&#34;4-如何修改或增加对象的属性&#34;&gt;4：如何修改或增加对象的属性&lt;/h3&gt;
+
+&lt;p&gt;改自身&lt;br /&gt;
+obj[&amp;lsquo;name&amp;rsquo;]=&amp;lsquo;fu&amp;rsquo;&lt;br /&gt;
+批量修改自身&lt;br /&gt;
+Object.assign(obj,{age:18,&amp;hellip;})&lt;br /&gt;
+改共有属性&lt;br /&gt;
+Object.prototype[&amp;lsquo;toString&amp;rsquo;]=&amp;lsquo;xxx&amp;rsquo;&lt;br /&gt;
+改原型&lt;br /&gt;
+let obj=Object.create(common)&lt;/p&gt;
+
+&lt;h3 id=&#34;5-name-in-obj和obj-hasownproperty-name-的区别&#34;&gt;5：&amp;rsquo;name&amp;rsquo; in obj和obj.hasOwnProperty(&amp;lsquo;name&amp;rsquo;) 的区别&lt;/h3&gt;
+
+&lt;p&gt;hasOwnProperty() 方法会返回一个布尔值，指示对象自身属性中（非继承属性）是否具有指定的属性，
+如果 object 具有带指定名称的属性，则 hasOwnProperty 方法返回 true，否则返回 false。此方法不会检查对象原型链中的属性；该属性必须是对象本身的一个成员。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JS数据类型</title>
+      <link>http://fjn618.xyz/2019/js%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
+      <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>
+      
+      <guid>http://fjn618.xyz/2019/js%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
+      <description>
+
+&lt;h3 id=&#34;7种数据类型&#34;&gt;7种数据类型&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;数字number&lt;br /&gt;
+NaN(Not a Number)用来表示 无法表示的数字
+NaN不等于NaN
+64位浮点数&lt;br /&gt;
+符号占1位,指数占11位(-1023~1024),有效数字占52位(开头的1省略)&lt;br /&gt;
+最大值Number.MAX_VALUE:1.7976931348623157e+308&lt;br /&gt;
+最小值Number.MIX_VALUE:5e-324&lt;br /&gt;
+15位有效数字可以精确表示,或者16位有效数字,小于90开头&lt;/li&gt;
+&lt;li&gt;字符串string&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;布尔bool
+true和false&lt;br /&gt;
+1、只要“&amp;amp;&amp;amp;”前面是false，无论“&amp;amp;&amp;amp;”后面是true还是false，结果都将返“&amp;amp;&amp;amp;”前面的值;&lt;br /&gt;
+2、只要“&amp;amp;&amp;amp;”前面是true，无论“&amp;amp;&amp;amp;”后面是true还是false，结果都将返“&amp;amp;&amp;amp;”后面的值;&lt;/li&gt;
+&lt;li&gt;符号symbol&lt;br /&gt;
+引号不包含在字符串内.&lt;br /&gt;
+如果想储存&amp;rsquo;it&amp;rsquo;s ok&amp;rsquo; 则写为&lt;br /&gt;
+&amp;lsquo;it\&amp;rsquo;s ok&amp;rsquo;&lt;br /&gt;
+&amp;ldquo;it&amp;rsquo;s ok&amp;rdquo;&lt;br /&gt;
+或改成反引号  &lt;code&gt;it&#39;s ok&lt;/code&gt;&lt;br /&gt;
+转义&lt;br /&gt;
+\n 表示换行,  \r表示回车,  \t表示tab制表符,  \ \表示 (斜杠\ )&lt;br /&gt;
+\uFFFF表示对应的Unicode字符
+\xFF表示前256个Unicode字符&lt;/li&gt;
+&lt;li&gt;空undefined&lt;/li&gt;
+&lt;li&gt;空null&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;对象object&lt;br /&gt;
+总结:四基两空一对象&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
       <title>包子的星球</title>
       <link>http://fjn618.xyz/2019/%E5%8C%85%E5%AD%90%E7%9A%84%E6%98%9F%E7%90%83/</link>
       <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>

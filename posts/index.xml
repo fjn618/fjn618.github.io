@@ -242,6 +242,67 @@ JavaScript是一种直译式脚本语言，是一种动态类型、弱类型、�
     </item>
     
     <item>
+      <title>JS 对象基本用法</title>
+      <link>http://fjn618.xyz/2019/js-%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>
+      
+      <guid>http://fjn618.xyz/2019/js-%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      <description>1：声明对象的两种语法 let obj = {&amp;lsquo;name&amp;rsquo;:&amp;lsquo;fu&amp;rsquo;}
+console.log({&amp;lsquo;name&amp;rsquo;:&amp;lsquo;fu&amp;rsquo;,&amp;lsquo;age&amp;rsquo;,18})
+2：如何删除对象的属性 delete obj.xxx或delete obj[&amp;lsquo;xxx&amp;rsquo;]
+不含属性名
+&amp;lsquo;xxx&amp;rsquo; in obj === false
+含有属性名,但是值为undefined
+&amp;lsquo;xxx&amp;rsquo; in obj&amp;amp;&amp;amp;obj.xxx === undefined
+3：如何查看对象的属性 中括号语法:obj[&amp;lsquo;key&amp;rsquo;]
+点语法:obj.key
+优先使用中括号语法
+查看自身所有属性
+Object.keys(obj)
+查看自身+共有属性
+console.dir(obj)
+或者自己依次用Object.keys打印出obj._ _ proto _ _
+判断一个属性是自身的还是共有的
+obj.hasOwnProperty(&amp;lsquo;toString&amp;rsquo;)
+4：如何修改或增加对象的属性 改自身
+obj[&amp;lsquo;name&amp;rsquo;]=&amp;lsquo;fu&amp;rsquo;
+批量修改自身
+Object.assign(obj,{age:18,&amp;hellip;})
+改共有属性
+Object.prototype[&amp;lsquo;toString&amp;rsquo;]=&amp;lsquo;xxx&amp;rsquo;
+改原型
+let obj=Object.create(common)
+5：&amp;rsquo;name&amp;rsquo; in obj和obj.hasOwnProperty(&amp;lsquo;name&amp;rsquo;) 的区别 hasOwnProperty() 方法会返回一个布尔值，指示对象自身属性中（非继承属性）是否具有指定的属性， 如果 object 具有带指定名称的属性，则 hasOwnProperty 方法返回 true，否则返回 false。此方法不会检查对象原型链中的属性；该属性必须是对象本身的一个成员。</description>
+    </item>
+    
+    <item>
+      <title>JS数据类型</title>
+      <link>http://fjn618.xyz/2019/js%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
+      <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>
+      
+      <guid>http://fjn618.xyz/2019/js%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
+      <description> 7种数据类型  数字number
+NaN(Not a Number)用来表示 无法表示的数字 NaN不等于NaN 64位浮点数
+符号占1位,指数占11位(-1023~1024),有效数字占52位(开头的1省略)
+最大值Number.MAX_VALUE:1.7976931348623157e+308
+最小值Number.MIX_VALUE:5e-324
+15位有效数字可以精确表示,或者16位有效数字,小于90开头 字符串string
+ 布尔bool true和false
+1、只要“&amp;amp;&amp;amp;”前面是false，无论“&amp;amp;&amp;amp;”后面是true还是false，结果都将返“&amp;amp;&amp;amp;”前面的值;
+2、只要“&amp;amp;&amp;amp;”前面是true，无论“&amp;amp;&amp;amp;”后面是true还是false，结果都将返“&amp;amp;&amp;amp;”后面的值; 符号symbol
+引号不包含在字符串内.
+如果想储存&amp;rsquo;it&amp;rsquo;s ok&amp;rsquo; 则写为
+&amp;lsquo;it\&amp;rsquo;s ok&amp;rsquo;
+&amp;ldquo;it&amp;rsquo;s ok&amp;rdquo;
+或改成反引号 it&#39;s ok
+转义
+\n 表示换行, \r表示回车, \t表示tab制表符, \ \表示 (斜杠\ )
+\uFFFF表示对应的Unicode字符 \xFF表示前256个Unicode字符 空undefined 空null
+ 对象object
+总结:四基两空一对象  </description>
+    </item>
+    
+    <item>
       <title>包子的星球</title>
       <link>http://fjn618.xyz/2019/%E5%8C%85%E5%AD%90%E7%9A%84%E6%98%9F%E7%90%83/</link>
       <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>

@@ -9,9 +9,9 @@
   
   
   
-  <link rel="prev" href="http://fjn618.xyz/2019/js-%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" />
-  <link rel="next" href="http://fjn618.xyz/2019/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" />
-  <link rel="canonical" href="http://fjn618.xyz/2019/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/" />
+  <link rel="prev" href="http://fjn618.xyz/2019/%E5%8C%85%E5%AD%90%E7%9A%84%E6%98%9F%E7%90%83/" />
+  <link rel="next" href="http://fjn618.xyz/2019/js-%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" />
+  <link rel="canonical" href="http://fjn618.xyz/2019/js%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           JavaScript的诞生 | 包子的小世界
+           JS数据类型 | 包子的小世界
        
   </title>
-  <meta name="title" content="JavaScript的诞生 | 包子的小世界">
+  <meta name="title" content="JS数据类型 | 包子的小世界">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "http:\/\/fjn618.xyz\/"
     },
     "articleSection" : "posts",
-    "name" : "JavaScript的诞生",
-    "headline" : "JavaScript的诞生",
-    "description" : "系统程序员Brendan Eich 用10天时间设计了Javascript\n1）借鉴C语言的基本语法；\n2）借鉴Java语言的数据类型和内存管理；\n3）借鉴Scheme语言，将函数提升到\x26rdquo;第一等公民\x26rdquo;（first class）的地位；\n4）借鉴Self语言，使用基于原型（prototype）的继承机制。\nJavaScript是一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。\n为了取得技术优势，微软推出了JScript，CEnvi推出ScriptEase，与JavaScript同样可在浏览器上运行。为了统一规格，JavaScript兼容于ECMA标准，因此也称为ECMAScript。\n目前世界上使用最广泛的 JS 版本（IE 6 支持的版本）是第三版\n截止到 2020 年，全球浏览器市场份额最高的浏览器是chrome",
+    "name" : "JS数据类型",
+    "headline" : "JS数据类型",
+    "description" : " 7种数据类型  数字number\nNaN(Not a Number)用来表示 无法表示的数字 NaN不等于NaN 64位浮点数\n符号占1位,指数占11位(-1023~1024),有效数字占52位(开头的1省略)\n最大值Number.MAX_VALUE:1.7976931348623157e\x2b308\n最小值Number.MIX_VALUE:5e-324\n15位有效数字可以精确表示,或者16位有效数字,小于90开头 字符串string\n 布尔bool true和false\n1、只要“\x26amp;\x26amp;”前面是false，无论“\x26amp;\x26amp;”后面是true还是false，结果都将返“\x26amp;\x26amp;”前面的值;\n2、只要“\x26amp;\x26amp;”前面是true，无论“\x26amp;\x26amp;”后面是true还是false，结果都将返“\x26amp;\x26amp;”后面的值; 符号symbol\n引号不包含在字符串内.\n如果想储存\x26rsquo;it\x26rsquo;s ok\x26rsquo; 则写为\n\x26lsquo;it\\\x26rsquo;s ok\x26rsquo;\n\x26ldquo;it\x26rsquo;s ok\x26rdquo;\n或改成反引号 it\x27s ok\n转义\n\\n 表示换行, \\r表示回车, \\t表示tab制表符, \\ \\表示 (斜杠\\ )\n\\uFFFF表示对应的Unicode字符 \\xFF表示前256个Unicode字符 空undefined 空null\n 对象object\n总结:四基两空一对象  ",
     "inLanguage" : "zh-Hans",
     "author" : "fujiaoning",
     "creator" : "fujiaoning",
@@ -56,8 +56,8 @@
     "copyrightYear" : "2019",
     "datePublished": "2019-08-29 15:31:37 \x2b0800 CST",
     "dateModified" : "2019-08-29 15:31:37 \x2b0800 CST",
-    "url" : "http:\/\/fjn618.xyz\/2019\/javascript%E7%9A%84%E8%AF%9E%E7%94%9F\/",
-    "wordCount" : "18",
+    "url" : "http:\/\/fjn618.xyz\/2019\/js%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B\/",
+    "wordCount" : "44",
     "keywords" : [  "包子的小世界"]
 }
 </script>
@@ -116,7 +116,7 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">JavaScript的诞生</h1>
+        <h1 class="post-title" itemprop="name headline">JS数据类型</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="http://fjn618.xyz/" rel="author">fujiaoning</a> with ♥ 
                 <span class="post-time">
@@ -144,24 +144,37 @@
 
           
 
-<h3 id="系统程序员brendan-eich">系统程序员Brendan Eich</h3>
+<h3 id="7种数据类型">7种数据类型</h3>
 
-<p>用10天时间设计了Javascript<br />
-1）借鉴C语言的基本语法；</p>
-
-<p>2）借鉴Java语言的数据类型和内存管理；</p>
-
-<p>3）借鉴Scheme语言，将函数提升到&rdquo;第一等公民&rdquo;（first class）的地位；</p>
-
-<p>4）借鉴Self语言，使用基于原型（prototype）的继承机制。</p>
-
-<p>JavaScript是一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。</p>
-
-<p>为了取得技术优势，微软推出了JScript，CEnvi推出ScriptEase，与JavaScript同样可在浏览器上运行。为了统一规格，JavaScript兼容于ECMA标准，因此也称为ECMAScript。</p>
-
-<p>目前世界上使用最广泛的 JS 版本（IE 6 支持的版本）是第三版</p>
-
-<p>截止到 2020 年，全球浏览器市场份额最高的浏览器是chrome</p>
+<ol>
+<li>数字number<br />
+NaN(Not a Number)用来表示 无法表示的数字
+NaN不等于NaN
+64位浮点数<br />
+符号占1位,指数占11位(-1023~1024),有效数字占52位(开头的1省略)<br />
+最大值Number.MAX_VALUE:1.7976931348623157e+308<br />
+最小值Number.MIX_VALUE:5e-324<br />
+15位有效数字可以精确表示,或者16位有效数字,小于90开头</li>
+<li>字符串string<br /></li>
+<li>布尔bool
+true和false<br />
+1、只要“&amp;&amp;”前面是false，无论“&amp;&amp;”后面是true还是false，结果都将返“&amp;&amp;”前面的值;<br />
+2、只要“&amp;&amp;”前面是true，无论“&amp;&amp;”后面是true还是false，结果都将返“&amp;&amp;”后面的值;</li>
+<li>符号symbol<br />
+引号不包含在字符串内.<br />
+如果想储存&rsquo;it&rsquo;s ok&rsquo; 则写为<br />
+&lsquo;it\&rsquo;s ok&rsquo;<br />
+&ldquo;it&rsquo;s ok&rdquo;<br />
+或改成反引号  <code>it's ok</code><br />
+转义<br />
+\n 表示换行,  \r表示回车,  \t表示tab制表符,  \ \表示 (斜杠\ )<br />
+\uFFFF表示对应的Unicode字符
+\xFF表示前256个Unicode字符</li>
+<li>空undefined</li>
+<li>空null<br /></li>
+<li>对象object<br />
+总结:四基两空一对象</li>
+</ol>
 
     </div>
 
@@ -176,7 +189,7 @@
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=http://fjn618.xyz/2019/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/>http://fjn618.xyz/2019/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</span>
+                    <a href=http://fjn618.xyz/2019/js%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/>http://fjn618.xyz/2019/js%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</span>
             </p>
             
             
@@ -193,10 +206,10 @@
 
     <div class="post-nav">
         
-        <a href="http://fjn618.xyz/2019/js-%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" class="prev" rel="prev" title="JS 对象基本用法"><i class="iconfont icon-left"></i>&nbsp;JS 对象基本用法</a>
+        <a href="http://fjn618.xyz/2019/%E5%8C%85%E5%AD%90%E7%9A%84%E6%98%9F%E7%90%83/" class="prev" rel="prev" title="包子的星球"><i class="iconfont icon-left"></i>&nbsp;包子的星球</a>
          
         
-        <a href="http://fjn618.xyz/2019/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="next" rel="next" title="HTML常用标签">HTML常用标签&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="http://fjn618.xyz/2019/js-%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" class="next" rel="next" title="JS 对象基本用法">JS 对象基本用法&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
