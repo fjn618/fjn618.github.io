@@ -242,6 +242,18 @@ JavaScript是一种直译式脚本语言，是一种动态类型、弱类型、�
     </item>
     
     <item>
+      <title>JS 函数的执行时机</title>
+      <link>http://fjn618.xyz/2019/js-%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</link>
+      <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>
+      
+      <guid>http://fjn618.xyz/2019/js-%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</guid>
+      <description> 1. let i = 0 for(i = 0; i&amp;lt;6; i++){ setTimeout(()=&amp;gt;{ console.log(i) },0) }  for循环后,立刻打印出i,因为只有一个i,所以6次值一样,for循环在i=6时停止,所以答案为6个6.
+2. for(let i = 0; i&amp;lt;6; i++){ setTimeout(()=&amp;gt;{ console.log(i) },0) }  每次进入循环的时候,把i复制一份,所以会打印出来0,1,2,3,4,5
+3. 利用 const 关键字
+let i for(i = 0; i&amp;lt;6; i++){ const x = i setTimeout(()=&amp;gt;{ console.log(x) }) }  </description>
+    </item>
+    
+    <item>
       <title>JS 对象基本用法</title>
       <link>http://fjn618.xyz/2019/js-%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
       <pubDate>Thu, 29 Aug 2019 15:31:37 +0800</pubDate>

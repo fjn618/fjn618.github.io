@@ -9,9 +9,9 @@
   
   
   
-  
-  <link rel="next" href="http://fjn618.xyz/2019/%E5%8C%85%E5%AD%90%E7%9A%84%E6%98%9F%E7%90%83/" />
-  <link rel="canonical" href="http://fjn618.xyz/2019/%E6%B5%85%E6%9E%90-url/" />
+  <link rel="prev" href="http://fjn618.xyz/2019/js-%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" />
+  <link rel="next" href="http://fjn618.xyz/2019/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/" />
+  <link rel="canonical" href="http://fjn618.xyz/2019/js-%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           浅析 URL | 包子的小世界
+           JS 函数的执行时机 | 包子的小世界
        
   </title>
-  <meta name="title" content="浅析 URL | 包子的小世界">
+  <meta name="title" content="JS 函数的执行时机 | 包子的小世界">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "http:\/\/fjn618.xyz\/"
     },
     "articleSection" : "posts",
-    "name" : "浅析 URL",
-    "headline" : "浅析 URL",
-    "description" : "URL 协议: 基于TCP和IP两个协议\n域名\/IP:分为内网和外网 一个域名可以对应不同IP\x26ndash;均衡负载,一个IP可以对应不同域名\x26ndash;共享主机\n端口号:对应不同的服务 port 0~1023留给系统使用 其他给普通用户使用\n路径:请求不同的页面\n查询字符串: 同一个页面,不同内容\n锚点:同一个内容,不同位置 DNS 作用: 将域名和IP对应\nnslookup命令: 查询DNS的记录，查看域名解析是否正常，在网络故障的时候用来诊断网络问题。\nIP 作用: 定位区别不同的主机\n特殊IP:123.0.0.1表示自己,localhost通过hosts指定为自己,0.0.0.0不表示任何设备\nping命令: ping baidu.com 可得到百度的ip\n域名 com是顶级域名,xxx.com是二级域名,www.xxx.com是三级域名",
+    "name" : "JS 函数的执行时机",
+    "headline" : "JS 函数的执行时机",
+    "description" : " 1. let i = 0 for(i = 0; i\x26lt;6; i\x2b\x2b){ setTimeout(()=\x26gt;{ console.log(i) },0) }  for循环后,立刻打印出i,因为只有一个i,所以6次值一样,for循环在i=6时停止,所以答案为6个6.\n2. for(let i = 0; i\x26lt;6; i\x2b\x2b){ setTimeout(()=\x26gt;{ console.log(i) },0) }  每次进入循环的时候,把i复制一份,所以会打印出来0,1,2,3,4,5\n3. 利用 const 关键字\nlet i for(i = 0; i\x26lt;6; i\x2b\x2b){ const x = i setTimeout(()=\x26gt;{ console.log(x) }) }  ",
     "inLanguage" : "zh-Hans",
     "author" : "fujiaoning",
     "creator" : "fujiaoning",
@@ -56,8 +56,8 @@
     "copyrightYear" : "2019",
     "datePublished": "2019-08-29 15:31:37 \x2b0800 CST",
     "dateModified" : "2019-08-29 15:31:37 \x2b0800 CST",
-    "url" : "http:\/\/fjn618.xyz\/2019\/%E6%B5%85%E6%9E%90-url\/",
-    "wordCount" : "28",
+    "url" : "http:\/\/fjn618.xyz\/2019\/js-%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA\/",
+    "wordCount" : "46",
     "keywords" : [  "包子的小世界"]
 }
 </script>
@@ -116,7 +116,7 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">浅析 URL</h1>
+        <h1 class="post-title" itemprop="name headline">JS 函数的执行时机</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="http://fjn618.xyz/" rel="author">fujiaoning</a> with ♥ 
                 <span class="post-time">
@@ -129,8 +129,6 @@
     <div class="post-content">
         
 
-        
-            
         
 
         
@@ -146,30 +144,41 @@
 
           
 
-<h3 id="url">URL</h3>
+<h3 id="1">1.</h3>
 
-<p>协议: 基于TCP和IP两个协议<br />
-域名/IP:分为内网和外网 一个域名可以对应不同IP&ndash;均衡负载,一个IP可以对应不同域名&ndash;共享主机<br />
-端口号:对应不同的服务 port 0~1023留给系统使用 其他给普通用户使用<br />
-路径:请求不同的页面<br />
-查询字符串: 同一个页面,不同内容<br />
-锚点:同一个内容,不同位置
-<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/images/URL.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></p>
+<pre><code>let i = 0
+for(i = 0; i&lt;6; i++){
+  setTimeout(()=&gt;{
+    console.log(i)
+  },0)
+}
+</code></pre>
 
-<h3 id="dns">DNS</h3>
+<p>for循环后,立刻打印出i,因为只有一个i,所以6次值一样,for循环在i=6时停止,所以答案为6个6.</p>
 
-<p>作用: 将域名和IP对应<br />
-nslookup命令: 查询DNS的记录，查看域名解析是否正常，在网络故障的时候用来诊断网络问题。</p>
+<h3 id="2">2.</h3>
 
-<h3 id="ip">IP</h3>
+<pre><code>for(let i = 0; i&lt;6; i++){
+    setTimeout(()=&gt;{
+        console.log(i)
+    },0)
+}
+</code></pre>
 
-<p>作用: 定位区别不同的主机<br />
-特殊IP:123.0.0.1表示自己,localhost通过hosts指定为自己,0.0.0.0不表示任何设备<br />
-ping命令: ping baidu.com 可得到百度的ip</p>
+<p>每次进入循环的时候,把i复制一份,所以会打印出来0,1,2,3,4,5</p>
 
-<h3 id="域名">域名</h3>
+<h3 id="3">3.</h3>
 
-<p>com是顶级域名,xxx.com是二级域名,www.xxx.com是三级域名</p>
+<p>利用 const 关键字</p>
+
+<pre><code>let i
+for(i = 0; i&lt;6; i++){
+    const x = i
+    setTimeout(()=&gt;{
+      console.log(x)
+    })
+}
+</code></pre>
 
     </div>
 
@@ -184,7 +193,7 @@ ping命令: ping baidu.com 可得到百度的ip</p>
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=http://fjn618.xyz/2019/%E6%B5%85%E6%9E%90-url/>http://fjn618.xyz/2019/%E6%B5%85%E6%9E%90-url/</span>
+                    <a href=http://fjn618.xyz/2019/js-%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/>http://fjn618.xyz/2019/js-%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</span>
             </p>
             
             
@@ -200,9 +209,11 @@ ping命令: ping baidu.com 可得到百度的ip</p>
     </div>
 
     <div class="post-nav">
+        
+        <a href="http://fjn618.xyz/2019/js-%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" class="prev" rel="prev" title="JS 对象基本用法"><i class="iconfont icon-left"></i>&nbsp;JS 对象基本用法</a>
          
         
-        <a href="http://fjn618.xyz/2019/%E5%8C%85%E5%AD%90%E7%9A%84%E6%98%9F%E7%90%83/" class="next" rel="next" title="包子的星球">包子的星球&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="http://fjn618.xyz/2019/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/" class="next" rel="next" title="JavaScript的诞生">JavaScript的诞生&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -253,9 +264,8 @@ ping命令: ping baidu.com 可得到百度的ip</p>
 
 
     
-     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
-      
-     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
     
   
 
