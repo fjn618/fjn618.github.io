@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "JS 函数的执行时机",
     "headline" : "JS 函数的执行时机",
-    "description" : " 1. let i = 0 for(i = 0; i\x26lt;6; i\x2b\x2b){ setTimeout(()=\x26gt;{ console.log(i) },0) }  for循环后,立刻打印出i,因为只有一个i,所以6次值一样,for循环在i=6时停止,所以答案为6个6.\n2. for(let i = 0; i\x26lt;6; i\x2b\x2b){ setTimeout(()=\x26gt;{ console.log(i) },0) }  每次进入循环的时候,把i复制一份,所以会打印出来0,1,2,3,4,5\n3. 利用 const 关键字\nlet i for(i = 0; i\x26lt;6; i\x2b\x2b){ const x = i setTimeout(()=\x26gt;{ console.log(x) }) }  ",
+    "description" : " 1.为什么如下代码会打印 6 个 6 let i = 0 for(i = 0; i\x26lt;6; i\x2b\x2b){ setTimeout(()=\x26gt;{ console.log(i) },0) }  for循环后,立刻打印出i,因为只有一个i,所以6次值一样,for循环在i=6时停止,所以答案为6个6.\n2.打印 0、1、2、3、4、5 的方法 for(let i = 0; i\x26lt;6; i\x2b\x2b){ setTimeout(()=\x26gt;{ console.log(i) },0) }  每次进入循环的时候,把i复制一份,所以会打印出来0,1,2,3,4,5\n3.除了使用 for let 配合 利用 const 关键字\nlet i for(i = 0; i\x26lt;6; i\x2b\x2b){ const x = i setTimeout(()=\x26gt;{ console.log(x) }) }  ",
     "inLanguage" : "zh-Hans",
     "author" : "fujiaoning",
     "creator" : "fujiaoning",
@@ -57,7 +57,7 @@
     "datePublished": "2019-08-29 15:31:37 \x2b0800 CST",
     "dateModified" : "2019-08-29 15:31:37 \x2b0800 CST",
     "url" : "http:\/\/fjn618.xyz\/2019\/js-%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA\/",
-    "wordCount" : "46",
+    "wordCount" : "54",
     "keywords" : [  "包子的小世界"]
 }
 </script>
@@ -144,7 +144,7 @@
 
           
 
-<h3 id="1">1.</h3>
+<h3 id="1-为什么如下代码会打印-6-个-6">1.为什么如下代码会打印 6 个 6</h3>
 
 <pre><code>let i = 0
 for(i = 0; i&lt;6; i++){
@@ -156,7 +156,7 @@ for(i = 0; i&lt;6; i++){
 
 <p>for循环后,立刻打印出i,因为只有一个i,所以6次值一样,for循环在i=6时停止,所以答案为6个6.</p>
 
-<h3 id="2">2.</h3>
+<h3 id="2-打印-0-1-2-3-4-5-的方法">2.打印 0、1、2、3、4、5 的方法</h3>
 
 <pre><code>for(let i = 0; i&lt;6; i++){
     setTimeout(()=&gt;{
@@ -167,7 +167,7 @@ for(i = 0; i&lt;6; i++){
 
 <p>每次进入循环的时候,把i复制一份,所以会打印出来0,1,2,3,4,5</p>
 
-<h3 id="3">3.</h3>
+<h3 id="3-除了使用-for-let-配合">3.除了使用 for let 配合</h3>
 
 <p>利用 const 关键字</p>
 
